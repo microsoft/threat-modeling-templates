@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+3?xml version="1.0"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.2" author="Microsoft C+E Security Tools" />
+  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.3" author="Microsoft C+E Security Tools" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
