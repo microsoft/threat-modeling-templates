@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.18" author="Microsoft C+E Security" />
+  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.20" author="Microsoft C+E Security" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -67,7 +67,7 @@
           <Value />
         </Values>
         <Id>22222222-2222-2222-2222-222222222222</Id>
-        <AttributeType>0</AttributeType>
+        <AttributeType>2</AttributeType>
       </ThreatMetaDatum>
       <ThreatMetaDatum>
         <Name>Priority</Name>
@@ -1140,10 +1140,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Override the default Identity Server token cache with a scalable alternative. Refer: https://aka.ms/tmtauthn#override-token</Value>
+            <Value>Override the default Identity Server token cache with a scalable alternative. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#override-token&quot;&gt;https://aka.ms/tmtauthn#override-token&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1192,10 +1192,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable WCF's service throttling feature. Refer: https://aka.ms/tmtconfigmgmt#throttling</Value>
+            <Value>Enable WCF's service throttling feature. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#throttling&quot;&gt;https://aka.ms/tmtconfigmgmt#throttling&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1244,10 +1244,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defenses. Refer: https://aka.ms/tmtconfigmgmt#ui-defenses  Ensure that only trusted origins are allowed if CORS is enabled on ASP.NET Web Applications. Refer: https://aka.ms/tmtconfigmgmt#cors-aspnet  Mitigate against Cross-Site Request Forgery (CSRF) attacks on ASP.NET web pages. Refer: https://aka.ms/tmtsmgmt#csrf-asp</Value>
+            <Value>Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defenses. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#ui-defenses&quot;&gt;https://aka.ms/tmtconfigmgmt#ui-defenses&lt;/a&gt;  Ensure that only trusted origins are allowed if CORS is enabled on ASP.NET Web Applications. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#cors-aspnet&quot;&gt;https://aka.ms/tmtconfigmgmt#cors-aspnet&lt;/a&gt;  Mitigate against Cross-Site Request Forgery (CSRF) attacks on ASP.NET web pages. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#csrf-asp&quot;&gt;https://aka.ms/tmtsmgmt#csrf-asp&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1296,10 +1296,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Override the default ADAL token cache with a scalable alternative. Refer: https://aka.ms/tmtauthn#adal-scalable</Value>
+            <Value>Override the default ADAL token cache with a scalable alternative. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#adal-scalable&quot;&gt;https://aka.ms/tmtauthn#adal-scalable&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1348,10 +1348,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Configure a Windows Firewall for Database Engine Access. Refer: https://aka.ms/tmtconfigmgmt#firewall-db</Value>
+            <Value>Configure a Windows Firewall for Database Engine Access. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#firewall-db&quot;&gt;https://aka.ms/tmtconfigmgmt#firewall-db&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1400,10 +1400,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>When possible use Azure Active Directory Authentication for Connecting to SQL Database. . Refer: https://aka.ms/tmtauthn#win-authn-sql Ensure that least-privileged accounts are used to connect to Database server. Refer: https://aka.ms/tmtauthz#privileged-server</Value>
+            <Value>When possible use Azure Active Directory Authentication for Connecting to SQL Database. . Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#win-authn-sql&quot;&gt;https://aka.ms/tmtauthn#win-authn-sql&lt;/a&gt; Ensure that least-privileged accounts are used to connect to Database server. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#privileged-server&quot;&gt;https://aka.ms/tmtauthz#privileged-server&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1452,10 +1452,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement implicit jailbreak or rooting detection. Refer: https://aka.ms/tmtauthz#rooting-detection</Value>
+            <Value>Implement implicit jailbreak or rooting detection. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#rooting-detection&quot;&gt;https://aka.ms/tmtauthz#rooting-detection&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1504,10 +1504,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement proper authorization mechanism in ASP.NET Web API. Refer: https://aka.ms/tmtauthz#authz-aspnet</Value>
+            <Value>Implement proper authorization mechanism in ASP.NET Web API. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#authz-aspnet&quot;&gt;https://aka.ms/tmtauthz#authz-aspnet&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1556,10 +1556,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable fine-grained access management to Azure Subscription using RBAC. Refer: https://aka.ms/tmtauthz#grained-rbac</Value>
+            <Value>Enable fine-grained access management to Azure Subscription using RBAC. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#grained-rbac&quot;&gt;https://aka.ms/tmtauthz#grained-rbac&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1608,10 +1608,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Check service account privileges and check that the custom Services or ASP.NET Pages respect CRM's security. Refer: https://aka.ms/tmtcommsec#priv-aspnet</Value>
+            <Value>Check service account privileges and check that the custom Services or ASP.NET Pages respect CRM's security. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#priv-aspnet&quot;&gt;https://aka.ms/tmtcommsec#priv-aspnet&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1660,10 +1660,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Perform security modelling and use Field Level Security where required. Refer: https://aka.ms/tmtauthz#modeling-field  Perform security modelling and use Business Units/Teams where required. Refer: https://aka.ms/tmtdata#modeling-teams</Value>
+            <Value>Perform security modelling and use Field Level Security where required. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#modeling-field&quot;&gt;https://aka.ms/tmtauthz#modeling-field&lt;/a&gt;  Perform security modelling and use Business Units/Teams where required. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#modeling-teams&quot;&gt;https://aka.ms/tmtdata#modeling-teams&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1712,10 +1712,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Minimise access to share feature on critical entities. Refer: https://aka.ms/tmtdata#entities  Train users on the risks associated with the Dynamics CRM Share feature and good security practices. Refer: https://aka.ms/tmtdata#good-practices</Value>
+            <Value>Minimise access to share feature on critical entities. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#entities&quot;&gt;https://aka.ms/tmtdata#entities&lt;/a&gt;  Train users on the risks associated with the Dynamics CRM Share feature and good security practices. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#good-practices&quot;&gt;https://aka.ms/tmtdata#good-practices&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1764,10 +1764,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Perform security modelling of portal accounts keeping in mind that the security model for the portal differs from the rest of CRM. Refer: https://aka.ms/tmtauthz#portal-security</Value>
+            <Value>Perform security modelling of portal accounts keeping in mind that the security model for the portal differs from the rest of CRM. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#portal-security&quot;&gt;https://aka.ms/tmtauthz#portal-security&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1816,10 +1816,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that proper ACLs are configured to restrict unauthorized access to data on the device. Refer: https://aka.ms/tmtauthz#acl-restricted-access  Ensure that sensitive user-specific application content is stored in user-profile directory. Refer: https://aka.ms/tmtauthz#sensitive-directory</Value>
+            <Value>Ensure that proper ACLs are configured to restrict unauthorized access to data on the device. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#acl-restricted-access&quot;&gt;https://aka.ms/tmtauthz#acl-restricted-access&lt;/a&gt;  Ensure that sensitive user-specific application content is stored in user-profile directory. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#sensitive-directory&quot;&gt;https://aka.ms/tmtauthz#sensitive-directory&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1868,10 +1868,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that the deployed applications are run with least privileges. . Refer: https://aka.ms/tmtauthz#deployed-privileges</Value>
+            <Value>Ensure that the deployed applications are run with least privileges. . Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#deployed-privileges&quot;&gt;https://aka.ms/tmtauthz#deployed-privileges&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1920,10 +1920,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Grant limited access to objects in Azure storage using SAS or SAP. Refer: https://aka.ms/tmtauthn#limited-access-sas</Value>
+            <Value>Grant limited access to objects in Azure storage using SAS or SAP. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#limited-access-sas&quot;&gt;https://aka.ms/tmtauthn#limited-access-sas&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -1972,10 +1972,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>When possible, use Windows Authentication for connecting to SQL Server. Refer: https://aka.ms/tmtauthn#win-authn-sql  When SQL authentication mode is used, ensure that account and password policy are enforced on SQL server. Refer: https://aka.ms/tmtauthn#authn-account-pword  Do not use SQL Authentication in contained databases. Refer: https://aka.ms/tmtauthn#autn-contained-db</Value>
+            <Value>When possible, use Windows Authentication for connecting to SQL Server. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#win-authn-sql&quot;&gt;https://aka.ms/tmtauthn#win-authn-sql&lt;/a&gt;  When SQL authentication mode is used, ensure that account and password policy are enforced on SQL server. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#authn-account-pword&quot;&gt;https://aka.ms/tmtauthn#authn-account-pword&lt;/a&gt;  Do not use SQL Authentication in contained databases. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#autn-contained-db&quot;&gt;https://aka.ms/tmtauthn#autn-contained-db&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2024,10 +2024,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that administrative interfaces are appropriately locked down. Refer: https://aka.ms/tmtauthn#admin-interface-lockdown  Enforce sequential step order when processing business logic flows. Refer: https://aka.ms/tmtauthz#sequential-logic  Ensure that proper authorization is in place and principle of least privileges is followed. Refer: https://aka.ms/tmtauthz#principle-least-privilege  Business logic and resource access authorization decisions should not be based on incoming request parameters. Refer: https://aka.ms/tmtauthz#logic-request-parameters  Ensure that content and resources are not enumerable or accessible via forceful browsing. Refer: https://aka.ms/tmtauthz#enumerable-browsing</Value>
+            <Value>Ensure that administrative interfaces are appropriately locked down. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#admin-interface-lockdown&quot;&gt;https://aka.ms/tmtauthn#admin-interface-lockdown&lt;/a&gt;  Enforce sequential step order when processing business logic flows. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#sequential-logic&quot;&gt;https://aka.ms/tmtauthz#sequential-logic&lt;/a&gt;  Ensure that proper authorization is in place and principle of least privileges is followed. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#principle-least-privilege&quot;&gt;https://aka.ms/tmtauthz#principle-least-privilege&lt;/a&gt;  Business logic and resource access authorization decisions should not be based on incoming request parameters. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#logic-request-parameters&quot;&gt;https://aka.ms/tmtauthz#logic-request-parameters&lt;/a&gt;  Ensure that content and resources are not enumerable or accessible via forceful browsing. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#enumerable-browsing&quot;&gt;https://aka.ms/tmtauthz#enumerable-browsing&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2076,10 +2076,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Connect to Cloud Gateway using least-privileged tokens. Refer: https://aka.ms/tmtauthz#cloud-least-privileged</Value>
+            <Value>Connect to Cloud Gateway using least-privileged tokens. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#cloud-least-privileged&quot;&gt;https://aka.ms/tmtauthz#cloud-least-privileged&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2128,10 +2128,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that least-privileged accounts are used to connect to Database server. Refer: https://aka.ms/tmtauthz#privileged-server  Implement Row Level Security RLS to prevent tenants from accessing each others data. Refer: https://aka.ms/tmtauthz#rls-tenants  Sysadmin role should only have valid necessary users . Refer: https://aka.ms/tmtauthz#sysadmin-users</Value>
+            <Value>Ensure that least-privileged accounts are used to connect to Database server. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#privileged-server&quot;&gt;https://aka.ms/tmtauthz#privileged-server&lt;/a&gt;  Implement Row Level Security RLS to prevent tenants from accessing each others data. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#rls-tenants&quot;&gt;https://aka.ms/tmtauthz#rls-tenants&lt;/a&gt;  Sysadmin role should only have valid necessary users . Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#sysadmin-users&quot;&gt;https://aka.ms/tmtauthz#sysadmin-users&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2180,10 +2180,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that all admin interfaces are secured with strong credentials. Refer: https://aka.ms/tmtconfigmgmt#admin-strong</Value>
+            <Value>Ensure that all admin interfaces are secured with strong credentials. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#admin-strong&quot;&gt;https://aka.ms/tmtconfigmgmt#admin-strong&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2232,10 +2232,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Perform authorization checks in the device if it supports various actions that require different permission levels. Refer: https://aka.ms/tmtauthz#device-permission</Value>
+            <Value>Perform authorization checks in the device if it supports various actions that require different permission levels. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#device-permission&quot;&gt;https://aka.ms/tmtauthz#device-permission&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2284,10 +2284,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that only the minimum services/features are enabled on devices. Refer: https://aka.ms/tmtconfigmgmt#min-enable</Value>
+            <Value>Ensure that only the minimum services/features are enabled on devices. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#min-enable&quot;&gt;https://aka.ms/tmtconfigmgmt#min-enable&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2336,10 +2336,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Perform authorization checks in the Field Gateway if it supports various actions that require different permission levels. Refer: https://aka.ms/tmtauthz#field-permission</Value>
+            <Value>Perform authorization checks in the Field Gateway if it supports various actions that require different permission levels. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#field-permission&quot;&gt;https://aka.ms/tmtauthz#field-permission&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2388,10 +2388,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use resource tokens to connect to DocumentDB whenever possible. Refer: https://aka.ms/tmtauthz#resource-docdb</Value>
+            <Value>Use resource tokens to connect to DocumentDB whenever possible. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#resource-docdb&quot;&gt;https://aka.ms/tmtauthz#resource-docdb&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2440,10 +2440,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use parametrized SQL queries for DocumentDB. Refer: https://aka.ms/tmtinputval#sql-docdb</Value>
+            <Value>Use parametrized SQL queries for DocumentDB. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#sql-docdb&quot;&gt;https://aka.ms/tmtinputval#sql-docdb&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2492,10 +2492,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use resource tokens to connect to DocumentDB whenever possible. Refer: https://aka.ms/tmtauthz#resource-docdb</Value>
+            <Value>Use resource tokens to connect to DocumentDB whenever possible. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#resource-docdb&quot;&gt;https://aka.ms/tmtauthz#resource-docdb&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2544,10 +2544,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use a send-only permissions SAS Key for generating device tokens. Refer: https://aka.ms/tmtauthz#sendonly-sas</Value>
+            <Value>Use a send-only permissions SAS Key for generating device tokens. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#sendonly-sas&quot;&gt;https://aka.ms/tmtauthz#sendonly-sas&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2596,10 +2596,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Do not use access tokens that provide direct access to the Event Hub. Refer: https://aka.ms/tmtauthz#access-tokens-hub</Value>
+            <Value>Do not use access tokens that provide direct access to the Event Hub. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#access-tokens-hub&quot;&gt;https://aka.ms/tmtauthz#access-tokens-hub&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2648,10 +2648,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Connect to Event Hub using SAS keys that have the mimimum permissions required. Refer: https://aka.ms/tmtauthz#sas-minimum-permissions</Value>
+            <Value>Connect to Event Hub using SAS keys that have the mimimum permissions required. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#sas-minimum-permissions&quot;&gt;https://aka.ms/tmtauthz#sas-minimum-permissions&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2700,10 +2700,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Grant fine-grained permission on a range of entities in Azure Table Storage. Refer: https://aka.ms/tmtauthz#permission-entities</Value>
+            <Value>Grant fine-grained permission on a range of entities in Azure Table Storage. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#permission-entities&quot;&gt;https://aka.ms/tmtauthz#permission-entities&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2752,10 +2752,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable Role-Based Access Control (RBAC) to Azure storage account using Azure Resource Manager. Refer: https://aka.ms/tmtauthz#rbac-azure-manager</Value>
+            <Value>Enable Role-Based Access Control (RBAC) to Azure storage account using Azure Resource Manager. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#rbac-azure-manager&quot;&gt;https://aka.ms/tmtauthz#rbac-azure-manager&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2804,10 +2804,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict client's access to cluster operations using RBAC. Refer: https://aka.ms/tmtauthz#cluster-rbac</Value>
+            <Value>Restrict client's access to cluster operations using RBAC. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#cluster-rbac&quot;&gt;https://aka.ms/tmtauthz#cluster-rbac&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2856,10 +2856,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use Data managent gateway while connecting On Prem SQL Server to Azure Data Factory. Refer: https://aka.ms/tmtcommsec#sqlserver-factory</Value>
+            <Value>Use Data managent gateway while connecting On Prem SQL Server to Azure Data Factory. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#sqlserver-factory&quot;&gt;https://aka.ms/tmtcommsec#sqlserver-factory&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2908,10 +2908,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Do not expose security details in error messages. Refer: https://aka.ms/tmtxmgmt#messages Implement Default error handling page. Refer: https://aka.ms/tmtxmgmt#default  Set Deployment Method to Retail in IIS. Refer: https://aka.ms/tmtxmgmt#deployment  Use only approved symmetric block ciphers and key lengths. Refer: https://aka.ms/tmtcrypto#cipher-length  Use approved block cipher modes and initialization vectors for symmetric ciphers. Refer: https://aka.ms/tmtcrypto#vector-ciphers  Use approved asymmetric algorithms, key lengths, and padding. Refer: https://aka.ms/tmtcrypto#padding  Use approved random number generators. Refer: https://aka.ms/tmtcrypto#numgen  Do not use symmetric stream ciphers. Refer: https://aka.ms/tmtcrypto#stream-ciphers  Use approved MAC/HMAC/keyed hash algorithms. Refer: https://aka.ms/tmtcrypto#mac-hash  Use only approved cryptographic hash functions. Refer: https://aka.ms/tmtcrypto#hash-functions  Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: https://aka.ms/tmtcommsec#x509-ssltls</Value>
+            <Value>Do not expose security details in error messages. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#messages&quot;&gt;https://aka.ms/tmtxmgmt#messages&lt;/a&gt; Implement Default error handling page. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#default&quot;&gt;https://aka.ms/tmtxmgmt#default&lt;/a&gt;  Set Deployment Method to Retail in IIS. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#deployment&quot;&gt;https://aka.ms/tmtxmgmt#deployment&lt;/a&gt;  Use only approved symmetric block ciphers and key lengths. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#cipher-length&quot;&gt;https://aka.ms/tmtcrypto#cipher-length&lt;/a&gt;  Use approved block cipher modes and initialization vectors for symmetric ciphers. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#vector-ciphers&quot;&gt;https://aka.ms/tmtcrypto#vector-ciphers&lt;/a&gt;  Use approved asymmetric algorithms, key lengths, and padding. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#padding&quot;&gt;https://aka.ms/tmtcrypto#padding&lt;/a&gt;  Use approved random number generators. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#numgen&quot;&gt;https://aka.ms/tmtcrypto#numgen&lt;/a&gt;  Do not use symmetric stream ciphers. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#stream-ciphers&quot;&gt;https://aka.ms/tmtcrypto#stream-ciphers&lt;/a&gt;  Use approved MAC/HMAC/keyed hash algorithms. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#mac-hash&quot;&gt;https://aka.ms/tmtcrypto#mac-hash&lt;/a&gt;  Use only approved cryptographic hash functions. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#hash-functions&quot;&gt;https://aka.ms/tmtcrypto#hash-functions&lt;/a&gt;  Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#x509-ssltls&quot;&gt;https://aka.ms/tmtcommsec#x509-ssltls&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -2960,10 +2960,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that the application does not log sensitive user data. Refer: https://aka.ms/tmtauditlog#log-sensitive-data  Ensure that Audit and Log Files have Restricted Access. Refer: https://aka.ms/tmtauditlog#log-restricted-access</Value>
+            <Value>Ensure that the application does not log sensitive user data. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#log-sensitive-data&quot;&gt;https://aka.ms/tmtauditlog#log-sensitive-data&lt;/a&gt;  Ensure that Audit and Log Files have Restricted Access. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#log-restricted-access&quot;&gt;https://aka.ms/tmtauditlog#log-restricted-access&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3012,10 +3012,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that sensitive data displayed on the user screen is masked. Refer: https://aka.ms/tmtdata#data-mask</Value>
+            <Value>Ensure that sensitive data displayed on the user screen is masked. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#data-mask&quot;&gt;https://aka.ms/tmtdata#data-mask&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3064,10 +3064,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that proper exception handling is done in ASP.NET Web API. Refer: https://aka.ms/tmtxmgmt#exception</Value>
+            <Value>Ensure that proper exception handling is done in ASP.NET Web API. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#exception&quot;&gt;https://aka.ms/tmtxmgmt#exception&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3116,10 +3116,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that sensitive data relevant to Web API is not stored in browser's storage. Refer: https://aka.ms/tmtdata#api-browser</Value>
+            <Value>Ensure that sensitive data relevant to Web API is not stored in browser's storage. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#api-browser&quot;&gt;https://aka.ms/tmtdata#api-browser&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3168,10 +3168,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that all traffic to Identity Server is over HTTPS connection. Refer: https://aka.ms/tmtcommsec#identity-https</Value>
+            <Value>Ensure that all traffic to Identity Server is over HTTPS connection. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#identity-https&quot;&gt;https://aka.ms/tmtcommsec#identity-https&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3220,10 +3220,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Perform security modelling and use Field Level Security where required. Refer: https://aka.ms/tmtauthz#modeling-field  Perform security modelling and use Business Units/Teams where required. Refer: https://aka.ms/tmtdata#modeling-teams</Value>
+            <Value>Perform security modelling and use Field Level Security where required. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#modeling-field&quot;&gt;https://aka.ms/tmtauthz#modeling-field&lt;/a&gt;  Perform security modelling and use Business Units/Teams where required. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#modeling-teams&quot;&gt;https://aka.ms/tmtdata#modeling-teams&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3272,10 +3272,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Perform security modelling and use Field Level Security where required. Refer: https://aka.ms/tmtauthz#modeling-field  Perform security modelling and use Business Units/Teams where required. Refer: https://aka.ms/tmtdata#modeling-teams</Value>
+            <Value>Perform security modelling and use Field Level Security where required. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#modeling-field&quot;&gt;https://aka.ms/tmtauthz#modeling-field&lt;/a&gt;  Perform security modelling and use Business Units/Teams where required. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#modeling-teams&quot;&gt;https://aka.ms/tmtdata#modeling-teams&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3324,10 +3324,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure a device management policy is in place that requires a use PIN and allows remote wiping. Refer: https://aka.ms/tmtcrypto#pin-remote</Value>
+            <Value>Ensure a device management policy is in place that requires a use PIN and allows remote wiping. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#pin-remote&quot;&gt;https://aka.ms/tmtcrypto#pin-remote&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3376,10 +3376,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure a device management policy is in place that requires a PIN/password/auto lock and encrypts all data (e.g. Bitlocker). Refer: https://aka.ms/tmtcrypto#bitlocker</Value>
+            <Value>Ensure a device management policy is in place that requires a PIN/password/auto lock and encrypts all data (e.g. Bitlocker). Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#bitlocker&quot;&gt;https://aka.ms/tmtcrypto#bitlocker&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3428,10 +3428,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Include a development standards rule proscribing showing config details in exception management outside development. Refer: https://aka.ms/tmtdata#exception-mgmt</Value>
+            <Value>Include a development standards rule proscribing showing config details in exception management outside development. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#exception-mgmt&quot;&gt;https://aka.ms/tmtdata#exception-mgmt&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3480,10 +3480,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Include a development standards rule proscribing showing config details in exception management outside development. Refer: https://aka.ms/tmtdata#exception-mgmt</Value>
+            <Value>Include a development standards rule proscribing showing config details in exception management outside development. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#exception-mgmt&quot;&gt;https://aka.ms/tmtdata#exception-mgmt&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3532,10 +3532,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable HTTPS - Secure Transport channel. Refer: https://aka.ms/tmtcommsec#https-transport</Value>
+            <Value>Enable HTTPS - Secure Transport channel. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#https-transport&quot;&gt;https://aka.ms/tmtcommsec#https-transport&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3584,10 +3584,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Consider using Encrypted File System (EFS) is used to protect confidential user-specific data. Refer: https://aka.ms/tmtdata#efs-user  Ensure that sensitive data stored by the application on the file system is encrypted. Refer: https://aka.ms/tmtdata#filesystem</Value>
+            <Value>Consider using Encrypted File System (EFS) is used to protect confidential user-specific data. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#efs-user&quot;&gt;https://aka.ms/tmtdata#efs-user&lt;/a&gt;  Ensure that sensitive data stored by the application on the file system is encrypted. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#filesystem&quot;&gt;https://aka.ms/tmtdata#filesystem&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3636,10 +3636,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that communication to Azure Redis Cache is over SSL . Refer: https://aka.ms/tmtcommsec#redis-ssl</Value>
+            <Value>Ensure that communication to Azure Redis Cache is over SSL . Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#redis-ssl&quot;&gt;https://aka.ms/tmtcommsec#redis-ssl&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3688,10 +3688,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement Certificate Pinning. Refer: https://aka.ms/tmtcommsec#cert-pinning</Value>
+            <Value>Implement Certificate Pinning. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#cert-pinning&quot;&gt;https://aka.ms/tmtcommsec#cert-pinning&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3740,10 +3740,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Force all traffic to Web APIs over HTTPS connection. Refer: https://aka.ms/tmtcommsec#webapi-https</Value>
+            <Value>Force all traffic to Web APIs over HTTPS connection. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#webapi-https&quot;&gt;https://aka.ms/tmtcommsec#webapi-https&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3792,10 +3792,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use Azure Storage Service Encryption (SSE) for Data at Rest (Preview). Refer: https://aka.ms/tmtdata#sse-preview  Use Client-Side Encryption to store sensitive data in Azure Storage. Refer: https://aka.ms/tmtdata#client-storage</Value>
+            <Value>Use Azure Storage Service Encryption (SSE) for Data at Rest (Preview). Refer: &lt;a href=&quot;https://aka.ms/tmtdata#sse-preview&quot;&gt;https://aka.ms/tmtdata#sse-preview&lt;/a&gt;  Use Client-Side Encryption to store sensitive data in Azure Storage. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#client-storage&quot;&gt;https://aka.ms/tmtdata#client-storage&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3844,10 +3844,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use SMB 3.0 compatible client to ensure in-transit data encryption to Azure File Shares. Refer: https://aka.ms/tmtcommsec#smb-shares</Value>
+            <Value>Use SMB 3.0 compatible client to ensure in-transit data encryption to Azure File Shares. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#smb-shares&quot;&gt;https://aka.ms/tmtcommsec#smb-shares&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3896,10 +3896,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt sensitive or PII data written to phones local storage. Refer: https://aka.ms/tmtdata#pii-phones</Value>
+            <Value>Encrypt sensitive or PII data written to phones local storage. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#pii-phones&quot;&gt;https://aka.ms/tmtdata#pii-phones&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -3948,10 +3948,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Secure Device to Cloud Gateway communication using SSL/TLS. Refer: https://aka.ms/tmtcommsec#device-cloud</Value>
+            <Value>Secure Device to Cloud Gateway communication using SSL/TLS. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#device-cloud&quot;&gt;https://aka.ms/tmtcommsec#device-cloud&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4000,10 +4000,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure SQL server connection encryption and certificate validation. Refer: https://aka.ms/tmtcommsec#sqlserver-validation  Force Encrypted communication to SQL server. Refer: https://aka.ms/tmtcommsec#encrypted-sqlserver</Value>
+            <Value>Ensure SQL server connection encryption and certificate validation. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#sqlserver-validation&quot;&gt;https://aka.ms/tmtcommsec#sqlserver-validation&lt;/a&gt;  Force Encrypted communication to SQL server. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#encrypted-sqlserver&quot;&gt;https://aka.ms/tmtcommsec#encrypted-sqlserver&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4052,10 +4052,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Secure Device to Field Gateway communication. Refer: https://aka.ms/tmtcommsec#device-field</Value>
+            <Value>Secure Device to Field Gateway communication. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#device-field&quot;&gt;https://aka.ms/tmtcommsec#device-field&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4104,10 +4104,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt sensitive data stored in DocumentDB. Refer: https://aka.ms/tmtdata#encrypt-docdb</Value>
+            <Value>Encrypt sensitive data stored in DocumentDB. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#encrypt-docdb&quot;&gt;https://aka.ms/tmtdata#encrypt-docdb&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4156,10 +4156,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use strong encryption algorithms to encrypt data in the database. Refer: https://aka.ms/tmtcrypto#strong-db  Ensure that sensitive data in database columns is encrypted. Refer: https://aka.ms/tmtdata#db-encrypted  Ensure that database-level encryption (TDE) is enabled. Refer: https://aka.ms/tmtdata#tde-enabled  Ensure that database backups are encrypted. Refer: https://aka.ms/tmtdata#backup  Use SQL server EKM to protect encryption keys. Refer: https://aka.ms/tmtcrypto#ekm-keys  Use AlwaysEncrypted feature if encryption keys should not be revealed to Database engine. Refer: https://aka.ms/tmtcrypto#keys-engine</Value>
+            <Value>Use strong encryption algorithms to encrypt data in the database. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#strong-db&quot;&gt;https://aka.ms/tmtcrypto#strong-db&lt;/a&gt;  Ensure that sensitive data in database columns is encrypted. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#db-encrypted&quot;&gt;https://aka.ms/tmtdata#db-encrypted&lt;/a&gt;  Ensure that database-level encryption (TDE) is enabled. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#tde-enabled&quot;&gt;https://aka.ms/tmtdata#tde-enabled&lt;/a&gt;  Ensure that database backups are encrypted. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#backup&quot;&gt;https://aka.ms/tmtdata#backup&lt;/a&gt;  Use SQL server EKM to protect encryption keys. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#ekm-keys&quot;&gt;https://aka.ms/tmtcrypto#ekm-keys&lt;/a&gt;  Use AlwaysEncrypted feature if encryption keys should not be revealed to Database engine. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#keys-engine&quot;&gt;https://aka.ms/tmtcrypto#keys-engine&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4208,10 +4208,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure secure management of Azure storage access keys. Refer: https://aka.ms/tmtconfigmgmt#secure-keys</Value>
+            <Value>Ensure secure management of Azure storage access keys. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#secure-keys&quot;&gt;https://aka.ms/tmtconfigmgmt#secure-keys&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4260,10 +4260,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that communication to Azure Storage is over HTTPS. Refer: https://aka.ms/tmtcommsec#comm-storage  Use Client-Side Encryption to store sensitive data in Azure Storage. Refer: https://aka.ms/tmtdata#client-storage</Value>
+            <Value>Ensure that communication to Azure Storage is over HTTPS. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#comm-storage&quot;&gt;https://aka.ms/tmtcommsec#comm-storage&lt;/a&gt;  Use Client-Side Encryption to store sensitive data in Azure Storage. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#client-storage&quot;&gt;https://aka.ms/tmtdata#client-storage&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4312,10 +4312,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt secrets in Service Fabric applications. Refer: https://aka.ms/tmtdata#fabric-apps</Value>
+            <Value>Encrypt secrets in Service Fabric applications. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#fabric-apps&quot;&gt;https://aka.ms/tmtdata#fabric-apps&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4364,10 +4364,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Configure SSL certificate for custom domain in Azure App Service. Refer: https://aka.ms/tmtcommsec#ssl-appservice  Force all traffic to Azure App Service over HTTPS connection . Refer: https://aka.ms/tmtcommsec#appservice-https</Value>
+            <Value>Configure SSL certificate for custom domain in Azure App Service. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#ssl-appservice&quot;&gt;https://aka.ms/tmtcommsec#ssl-appservice&lt;/a&gt;  Force all traffic to Azure App Service over HTTPS connection . Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#appservice-https&quot;&gt;https://aka.ms/tmtcommsec#appservice-https&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4416,10 +4416,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Remove standard server headers on Windows Azure Web Sites to avoid fingerprinting. Refer: https://aka.ms/tmtconfigmgmt#standard-finger</Value>
+            <Value>Remove standard server headers on Windows Azure Web Sites to avoid fingerprinting. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#standard-finger&quot;&gt;https://aka.ms/tmtconfigmgmt#standard-finger&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4468,10 +4468,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that administrative interfaces are appropriately locked down. Refer: https://aka.ms/tmtauthn#admin-interface-lockdown</Value>
+            <Value>Ensure that administrative interfaces are appropriately locked down. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#admin-interface-lockdown&quot;&gt;https://aka.ms/tmtauthn#admin-interface-lockdown&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4520,10 +4520,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that login auditing is enabled on SQL Server. Refer: https://aka.ms/tmtauditlog#identify-sensitive-entities  Ensure that least-privileged accounts are used to connect to Database server. Refer: https://aka.ms/tmtauthz#privileged-server  Enable Threat detection on Azure SQL database. Refer: https://aka.ms/tmtauditlog#threat-detection  Do not use dynamic queries in stored procedures. Refer: https://aka.ms/tmtinputval#stored-proc</Value>
+            <Value>Ensure that login auditing is enabled on SQL Server. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#identify-sensitive-entities&quot;&gt;https://aka.ms/tmtauditlog#identify-sensitive-entities&lt;/a&gt;  Ensure that least-privileged accounts are used to connect to Database server. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#privileged-server&quot;&gt;https://aka.ms/tmtauthz#privileged-server&lt;/a&gt;  Enable Threat detection on Azure SQL database. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#threat-detection&quot;&gt;https://aka.ms/tmtauditlog#threat-detection&lt;/a&gt;  Do not use dynamic queries in stored procedures. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#stored-proc&quot;&gt;https://aka.ms/tmtinputval#stored-proc&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4572,10 +4572,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt sections of Web API's configuration files that contain sensitive data. Refer: https://aka.ms/tmtconfigmgmt#config-sensitive</Value>
+            <Value>Encrypt sections of Web API's configuration files that contain sensitive data. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#config-sensitive&quot;&gt;https://aka.ms/tmtconfigmgmt#config-sensitive&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4624,10 +4624,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Applications available over HTTPS must use secure cookies. Refer: https://aka.ms/tmtsmgmt#https-secure-cookies  Enable HTTP Strict Transport Security (HSTS). Refer: https://aka.ms/tmtcommsec#http-hsts</Value>
+            <Value>Applications available over HTTPS must use secure cookies. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#https-secure-cookies&quot;&gt;https://aka.ms/tmtsmgmt#https-secure-cookies&lt;/a&gt;  Enable HTTP Strict Transport Security (HSTS). Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#http-hsts&quot;&gt;https://aka.ms/tmtcommsec#http-hsts&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4676,10 +4676,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use Azure Disk Encryption to encrypt disks used by Virtual Machines. Refer: https://aka.ms/tmtdata#disk-vm</Value>
+            <Value>Use Azure Disk Encryption to encrypt disks used by Virtual Machines. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#disk-vm&quot;&gt;https://aka.ms/tmtdata#disk-vm&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4728,10 +4728,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Do not expose security details in error messages. Refer: https://aka.ms/tmtxmgmt#messages  Implement Default error handling page. Refer: https://aka.ms/tmtxmgmt#default  Set Deployment Method to Retail in IIS. Refer: https://aka.ms/tmtxmgmt#deployment  Exceptions should fail safely. Refer: https://aka.ms/tmtxmgmt#fail  ASP.NET applications must disable tracing and debugging prior to deployment. Refer: https://aka.ms/tmtconfigmgmt#trace-deploy  Implement controls to prevent username enumeration. Refer: https://aka.ms/tmtauthn#controls-username-enum</Value>
+            <Value>Do not expose security details in error messages. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#messages&quot;&gt;https://aka.ms/tmtxmgmt#messages&lt;/a&gt;  Implement Default error handling page. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#default&quot;&gt;https://aka.ms/tmtxmgmt#default&lt;/a&gt;  Set Deployment Method to Retail in IIS. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#deployment&quot;&gt;https://aka.ms/tmtxmgmt#deployment&lt;/a&gt;  Exceptions should fail safely. Refer: &lt;a href=&quot;https://aka.ms/tmtxmgmt#fail&quot;&gt;https://aka.ms/tmtxmgmt#fail&lt;/a&gt;  ASP.NET applications must disable tracing and debugging prior to deployment. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#trace-deploy&quot;&gt;https://aka.ms/tmtconfigmgmt#trace-deploy&lt;/a&gt;  Implement controls to prevent username enumeration. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#controls-username-enum&quot;&gt;https://aka.ms/tmtauthn#controls-username-enum&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4780,10 +4780,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that sensitive content is not cached on the browser. Refer: https://aka.ms/tmtdata#cache-browser</Value>
+            <Value>Ensure that sensitive content is not cached on the browser. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#cache-browser&quot;&gt;https://aka.ms/tmtdata#cache-browser&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4832,10 +4832,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that auditing and logging is enforced on Web API. Refer: https://aka.ms/tmtauditlog#logging-web-api</Value>
+            <Value>Ensure that auditing and logging is enforced on Web API. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#logging-web-api&quot;&gt;https://aka.ms/tmtauditlog#logging-web-api&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4884,10 +4884,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Identify sensitive entities in your solution and implement change auditing. Refer: https://aka.ms/tmtauditlog#sensitive-entities</Value>
+            <Value>Identify sensitive entities in your solution and implement change auditing. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#sensitive-entities&quot;&gt;https://aka.ms/tmtauditlog#sensitive-entities&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4936,10 +4936,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use Azure Storage Analytics to audit access of Azure Storage. Refer: https://aka.ms/tmtauditlog#analytics</Value>
+            <Value>Use Azure Storage Analytics to audit access of Azure Storage. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#analytics&quot;&gt;https://aka.ms/tmtauditlog#analytics&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -4988,10 +4988,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that login auditing is enabled on SQL Server. Refer: https://aka.ms/tmtauditlog#identify-sensitive-entities</Value>
+            <Value>Ensure that login auditing is enabled on SQL Server. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#identify-sensitive-entities&quot;&gt;https://aka.ms/tmtauditlog#identify-sensitive-entities&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5040,10 +5040,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that auditing and logging is enforced on the application. Refer: https://aka.ms/tmtauditlog#auditing  Ensure that log rotation and separation are in place. Refer: https://aka.ms/tmtauditlog#log-rotation  Ensure that Audit and Log Files have Restricted Access. Refer: https://aka.ms/tmtauditlog#log-restricted-access  Ensure that User Management Events are Logged. Refer: https://aka.ms/tmtauditlog#user-management</Value>
+            <Value>Ensure that auditing and logging is enforced on the application. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#auditing&quot;&gt;https://aka.ms/tmtauditlog#auditing&lt;/a&gt;  Ensure that log rotation and separation are in place. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#log-rotation&quot;&gt;https://aka.ms/tmtauditlog#log-rotation&lt;/a&gt;  Ensure that Audit and Log Files have Restricted Access. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#log-restricted-access&quot;&gt;https://aka.ms/tmtauditlog#log-restricted-access&lt;/a&gt;  Ensure that User Management Events are Logged. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#user-management&quot;&gt;https://aka.ms/tmtauditlog#user-management&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5092,10 +5092,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that appropriate auditing and logging is enforced on Cloud Gateway. Refer: https://aka.ms/tmtauditlog#logging-cloud-gateway</Value>
+            <Value>Ensure that appropriate auditing and logging is enforced on Cloud Gateway. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#logging-cloud-gateway&quot;&gt;https://aka.ms/tmtauditlog#logging-cloud-gateway&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5144,10 +5144,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that appropriate auditing and logging is enforced on Field Gateway. Refer: https://aka.ms/tmtauditlog#logging-field-gateway</Value>
+            <Value>Ensure that appropriate auditing and logging is enforced on Field Gateway. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#logging-field-gateway&quot;&gt;https://aka.ms/tmtauditlog#logging-field-gateway&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5196,10 +5196,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable diagnostics logging for web apps in Azure App Service. Refer: https://aka.ms/tmtauditlog#diagnostics-logging</Value>
+            <Value>Enable diagnostics logging for web apps in Azure App Service. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#diagnostics-logging&quot;&gt;https://aka.ms/tmtauditlog#diagnostics-logging&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5248,10 +5248,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use standard authentication scenarios supported by Azure Active Directory. Refer: https://aka.ms/tmtauthn#authn-aad</Value>
+            <Value>Use standard authentication scenarios supported by Azure Active Directory. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#authn-aad&quot;&gt;https://aka.ms/tmtauthn#authn-aad&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5300,10 +5300,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use standard authentication scenarios supported by Identity Server. Refer: https://aka.ms/tmtauthn#standard-authn-id</Value>
+            <Value>Use standard authentication scenarios supported by Identity Server. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#standard-authn-id&quot;&gt;https://aka.ms/tmtauthn#standard-authn-id&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5352,10 +5352,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement proper logout when using Identity Server. Refer: https://aka.ms/tmtsmgmt#proper-logout</Value>
+            <Value>Implement proper logout when using Identity Server. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#proper-logout&quot;&gt;https://aka.ms/tmtsmgmt#proper-logout&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5404,10 +5404,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that signing keys are rolled over when using Identity Server. Refer: https://aka.ms/tmtcrypto#rolled-server</Value>
+            <Value>Ensure that signing keys are rolled over when using Identity Server. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#rolled-server&quot;&gt;https://aka.ms/tmtcrypto#rolled-server&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5456,10 +5456,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable fine-grained access management to Azure Subscription using RBAC. Refer: https://aka.ms/tmtauthz#grained-rbac  Enable Azure Multi-Factor Authentication for Azure Administrators. Refer: https://aka.ms/tmtauthn#multi-factor-azure-admin</Value>
+            <Value>Enable fine-grained access management to Azure Subscription using RBAC. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#grained-rbac&quot;&gt;https://aka.ms/tmtauthz#grained-rbac&lt;/a&gt;  Enable Azure Multi-Factor Authentication for Azure Administrators. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#multi-factor-azure-admin&quot;&gt;https://aka.ms/tmtauthn#multi-factor-azure-admin&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5508,10 +5508,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that TokenReplayCache is used to prevent the replay of ADAL authentication tokens. Refer: https://aka.ms/tmtauthn#tokenreplaycache-adal</Value>
+            <Value>Ensure that TokenReplayCache is used to prevent the replay of ADAL authentication tokens. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#tokenreplaycache-adal&quot;&gt;https://aka.ms/tmtauthn#tokenreplaycache-adal&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5560,10 +5560,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that the default login credentials of the field gateway are changed during installation. Refer: https://aka.ms/tmtconfigmgmt#default-change</Value>
+            <Value>Ensure that the default login credentials of the field gateway are changed during installation. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#default-change&quot;&gt;https://aka.ms/tmtconfigmgmt#default-change&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5612,10 +5612,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that only trusted origins are allowed if CORS is enabled on ASP.NET Web API. Refer: https://aka.ms/tmtconfigmgmt#cors-api  Mitigate against Cross-Site Request Forgery (CSRF) attacks on ASP.NET Web APIs. Refer: https://aka.ms/tmtsmgmt#csrf-api</Value>
+            <Value>Ensure that only trusted origins are allowed if CORS is enabled on ASP.NET Web API. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#cors-api&quot;&gt;https://aka.ms/tmtconfigmgmt#cors-api&lt;/a&gt;  Mitigate against Cross-Site Request Forgery (CSRF) attacks on ASP.NET Web APIs. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#csrf-api&quot;&gt;https://aka.ms/tmtsmgmt#csrf-api&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5664,10 +5664,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that cryptographically strong client id, client secret are used in Identity Server. Refer: https://aka.ms/tmtcrypto#client-server</Value>
+            <Value>Ensure that cryptographically strong client id, client secret are used in Identity Server. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#client-server&quot;&gt;https://aka.ms/tmtcrypto#client-server&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5716,10 +5716,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that only trusted origins are allowed if CORS is enabled on Azure storage. Refer: https://aka.ms/tmtconfigmgmt#cors-storage</Value>
+            <Value>Ensure that only trusted origins are allowed if CORS is enabled on Azure storage. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#cors-storage&quot;&gt;https://aka.ms/tmtconfigmgmt#cors-storage&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5768,10 +5768,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Set up session for inactivity lifetime. Refer: https://aka.ms/tmtsmgmt#inactivity-lifetime  Implement proper logout from the application. Refer: https://aka.ms/tmtsmgmt#proper-app-logout</Value>
+            <Value>Set up session for inactivity lifetime. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#inactivity-lifetime&quot;&gt;https://aka.ms/tmtsmgmt#inactivity-lifetime&lt;/a&gt;  Implement proper logout from the application. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#proper-app-logout&quot;&gt;https://aka.ms/tmtsmgmt#proper-app-logout&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5820,10 +5820,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable ValidateRequest attribute on ASP.NET Pages. Refer: https://aka.ms/tmtconfigmgmt#validate-aspnet  Encode untrusted web output prior to rendering. Refer: https://aka.ms/tmtinputval#rendering  Avoid using Html.Raw in Razor views. Refer: https://aka.ms/tmtinputval#html-razor  Sanitization should be applied on form fields that accept all characters e.g, rich text editor . Refer: https://aka.ms/tmtinputval#richtext  Do not assign DOM elements to sinks that do not have inbuilt encoding . Refer: https://aka.ms/tmtinputval#inbuilt-encode</Value>
+            <Value>Enable ValidateRequest attribute on ASP.NET Pages. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#validate-aspnet&quot;&gt;https://aka.ms/tmtconfigmgmt#validate-aspnet&lt;/a&gt;  Encode untrusted web output prior to rendering. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#rendering&quot;&gt;https://aka.ms/tmtinputval#rendering&lt;/a&gt;  Avoid using Html.Raw in Razor views. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#html-razor&quot;&gt;https://aka.ms/tmtinputval#html-razor&lt;/a&gt;  Sanitization should be applied on form fields that accept all characters e.g, rich text editor . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#richtext&quot;&gt;https://aka.ms/tmtinputval#richtext&lt;/a&gt;  Do not assign DOM elements to sinks that do not have inbuilt encoding . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#inbuilt-encode&quot;&gt;https://aka.ms/tmtinputval#inbuilt-encode&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5872,10 +5872,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: https://aka.ms/tmtcommsec#x509-ssltls</Value>
+            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#x509-ssltls&quot;&gt;https://aka.ms/tmtcommsec#x509-ssltls&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5924,10 +5924,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that devices connecting to Field or Cloud gateway are authenticated. Refer: https://aka.ms/tmtauthn#authn-devices-cloud</Value>
+            <Value>Ensure that devices connecting to Field or Cloud gateway are authenticated. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#authn-devices-cloud&quot;&gt;https://aka.ms/tmtauthn#authn-devices-cloud&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -5976,10 +5976,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use per-device authentication credentials. Refer: https://aka.ms/tmtauthn#authn-cred</Value>
+            <Value>Use per-device authentication credentials. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#authn-cred&quot;&gt;https://aka.ms/tmtauthn#authn-cred&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6028,10 +6028,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Generate a random symmetric key of sufficient length for authentication to IoT Hub. Refer: https://aka.ms/tmtcrypto#random-hub</Value>
+            <Value>Generate a random symmetric key of sufficient length for authentication to IoT Hub. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#random-hub&quot;&gt;https://aka.ms/tmtcrypto#random-hub&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6080,10 +6080,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use finite lifetimes for generated SaS tokens. Refer: https://aka.ms/tmtsmgmt#finite-tokens</Value>
+            <Value>Use finite lifetimes for generated SaS tokens. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#finite-tokens&quot;&gt;https://aka.ms/tmtsmgmt#finite-tokens&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6132,10 +6132,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Authenticate devices connecting to the Field Gateway. Refer: https://aka.ms/tmtauthn#authn-devices-field</Value>
+            <Value>Authenticate devices connecting to the Field Gateway. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#authn-devices-field&quot;&gt;https://aka.ms/tmtauthn#authn-devices-field&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6184,10 +6184,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use minimum token lifetimes for generated Resource tokens. Refer: https://aka.ms/tmtsmgmt#resource-tokens</Value>
+            <Value>Use minimum token lifetimes for generated Resource tokens. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#resource-tokens&quot;&gt;https://aka.ms/tmtsmgmt#resource-tokens&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6236,10 +6236,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use per device authentication credentials using SaS tokens. Refer: https://aka.ms/tmtauthn#authn-sas-tokens</Value>
+            <Value>Use per device authentication credentials using SaS tokens. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#authn-sas-tokens&quot;&gt;https://aka.ms/tmtauthn#authn-sas-tokens&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6288,10 +6288,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict anonymous access to Service Fabric Cluster. Refer: https://aka.ms/tmtauthn#anon-access-cluster</Value>
+            <Value>Restrict anonymous access to Service Fabric Cluster. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#anon-access-cluster&quot;&gt;https://aka.ms/tmtauthn#anon-access-cluster&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6340,10 +6340,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that Service Fabric client-to-node certificate is different from node-to-node certificate. Refer: https://aka.ms/tmtauthn#fabric-cn-nn</Value>
+            <Value>Ensure that Service Fabric client-to-node certificate is different from node-to-node certificate. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#fabric-cn-nn&quot;&gt;https://aka.ms/tmtauthn#fabric-cn-nn&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6392,10 +6392,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Explicitly disable the autocomplete HTML attribute in sensitive forms and inputs. Refer: https://aka.ms/tmtdata#autocomplete-input  Perform input validation and filtering on all string type Model properties. Refer: https://aka.ms/tmtinputval#typemodel  Validate all redirects within the application are closed or done safely. Refer: https://aka.ms/tmtinputval#redirect-safe  Enable step up or adaptive authentication. Refer: https://aka.ms/tmtauthn#step-up-adaptive-authn  Implement forgot password functionalities securely. Refer: https://aka.ms/tmtauthn#forgot-pword-fxn  Ensure that password and account policy are implemented. Refer: https://aka.ms/tmtauthn#pword-account-policy  Implement input validation on all string type parameters accepted by Controller methods. Refer: https://aka.ms/tmtinputval#string-method</Value>
+            <Value>Explicitly disable the autocomplete HTML attribute in sensitive forms and inputs. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#autocomplete-input&quot;&gt;https://aka.ms/tmtdata#autocomplete-input&lt;/a&gt;  Perform input validation and filtering on all string type Model properties. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#typemodel&quot;&gt;https://aka.ms/tmtinputval#typemodel&lt;/a&gt;  Validate all redirects within the application are closed or done safely. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#redirect-safe&quot;&gt;https://aka.ms/tmtinputval#redirect-safe&lt;/a&gt;  Enable step up or adaptive authentication. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#step-up-adaptive-authn&quot;&gt;https://aka.ms/tmtauthn#step-up-adaptive-authn&lt;/a&gt;  Implement forgot password functionalities securely. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#forgot-pword-fxn&quot;&gt;https://aka.ms/tmtauthn#forgot-pword-fxn&lt;/a&gt;  Ensure that password and account policy are implemented. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#pword-account-policy&quot;&gt;https://aka.ms/tmtauthn#pword-account-policy&lt;/a&gt;  Implement input validation on all string type parameters accepted by Controller methods. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#string-method&quot;&gt;https://aka.ms/tmtinputval#string-method&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6444,10 +6444,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use AAD to authenticate clients to service fabric clusters. Refer: https://aka.ms/tmtauthn#aad-client-fabric</Value>
+            <Value>Use AAD to authenticate clients to service fabric clusters. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#aad-client-fabric&quot;&gt;https://aka.ms/tmtauthn#aad-client-fabric&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6496,10 +6496,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that service fabric certificates are obtained from an approved Certificate Authority (CA). Refer: https://aka.ms/tmtauthn#fabric-cert-ca</Value>
+            <Value>Ensure that service fabric certificates are obtained from an approved Certificate Authority (CA). Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#fabric-cert-ca&quot;&gt;https://aka.ms/tmtauthn#fabric-cert-ca&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6548,10 +6548,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use ADAL libraries to manage token requests from OAuth2 clients to AAD (or on-premises AD). Refer: https://aka.ms/tmtauthn#adal-oauth2</Value>
+            <Value>Use ADAL libraries to manage token requests from OAuth2 clients to AAD (or on-premises AD). Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#adal-oauth2&quot;&gt;https://aka.ms/tmtauthn#adal-oauth2&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6600,10 +6600,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement proper logout using ADAL methods when using Azure AD. Refer: https://aka.ms/tmtsmgmt#logout-adal</Value>
+            <Value>Implement proper logout using ADAL methods when using Azure AD. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#logout-adal&quot;&gt;https://aka.ms/tmtsmgmt#logout-adal&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6652,10 +6652,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement proper logout using WsFederation methods when using ADFS. Refer: https://aka.ms/tmtsmgmt#wsfederation-logout</Value>
+            <Value>Implement proper logout using WsFederation methods when using ADFS. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#wsfederation-logout&quot;&gt;https://aka.ms/tmtsmgmt#wsfederation-logout&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6704,10 +6704,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Applications available over HTTPS must use secure cookies. Refer: https://aka.ms/tmtsmgmt#https-secure-cookies  All http based application should specify http only for cookie definition. Refer: https://aka.ms/tmtsmgmt#cookie-definition</Value>
+            <Value>Applications available over HTTPS must use secure cookies. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#https-secure-cookies&quot;&gt;https://aka.ms/tmtsmgmt#https-secure-cookies&lt;/a&gt;  All http based application should specify http only for cookie definition. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#cookie-definition&quot;&gt;https://aka.ms/tmtsmgmt#cookie-definition&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6756,10 +6756,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: https://aka.ms/tmtcommsec#x509-ssltls  Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defenses. Refer: https://aka.ms/tmtconfigmgmt#ui-defenses  Validate all redirects within the application are closed or done safely. Refer: https://aka.ms/tmtinputval#redirect-safe</Value>
+            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#x509-ssltls&quot;&gt;https://aka.ms/tmtcommsec#x509-ssltls&lt;/a&gt;  Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defenses. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#ui-defenses&quot;&gt;https://aka.ms/tmtconfigmgmt#ui-defenses&lt;/a&gt;  Validate all redirects within the application are closed or done safely. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#redirect-safe&quot;&gt;https://aka.ms/tmtinputval#redirect-safe&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6808,10 +6808,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that only the required containers and blobs are given anonymous read access. Refer: https://aka.ms/tmtauthn#req-containers-anon</Value>
+            <Value>Ensure that only the required containers and blobs are given anonymous read access. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#req-containers-anon&quot;&gt;https://aka.ms/tmtauthn#req-containers-anon&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6860,10 +6860,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Consider using a standard authentication mechanism to authenticate to Web Application. Refer: https://aka.ms/tmtauthn#standard-authn-web-app</Value>
+            <Value>Consider using a standard authentication mechanism to authenticate to Web Application. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#standard-authn-web-app&quot;&gt;https://aka.ms/tmtauthn#standard-authn-web-app&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6912,10 +6912,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that standard authentication techniques are used to secure Web APIs. Refer: https://aka.ms/tmtauthn#authn-secure-api</Value>
+            <Value>Ensure that standard authentication techniques are used to secure Web APIs. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#authn-secure-api&quot;&gt;https://aka.ms/tmtauthn#authn-secure-api&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -6964,10 +6964,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Disable XSLT scripting for all transforms using untrusted style sheets. Refer: https://aka.ms/tmtinputval#disable-xslt</Value>
+            <Value>Disable XSLT scripting for all transforms using untrusted style sheets. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#disable-xslt&quot;&gt;https://aka.ms/tmtinputval#disable-xslt&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7016,10 +7016,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Add digital signature to critical database securables. Refer: https://aka.ms/tmtcrypto#securables-db</Value>
+            <Value>Add digital signature to critical database securables. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#securables-db&quot;&gt;https://aka.ms/tmtcrypto#securables-db&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7068,10 +7068,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that model validation is done on Web API methods. Refer: https://aka.ms/tmtinputval#validation-api  Implement input validation on all string type parameters accepted by Web API methods. Refer: https://aka.ms/tmtinputval#string-api</Value>
+            <Value>Ensure that model validation is done on Web API methods. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#validation-api&quot;&gt;https://aka.ms/tmtinputval#validation-api&lt;/a&gt;  Implement input validation on all string type parameters accepted by Web API methods. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#string-api&quot;&gt;https://aka.ms/tmtinputval#string-api&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7120,10 +7120,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>WCF: Set Message security Protection level to EncryptAndSign. Refer: https://aka.ms/tmtcommsec#message-protection</Value>
+            <Value>WCF: Set Message security Protection level to EncryptAndSign. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#message-protection&quot;&gt;https://aka.ms/tmtcommsec#message-protection&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7172,10 +7172,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that devices have end point security controls configured as per organizational policies. Refer: https://aka.ms/tmtconfigmgmt#controls-policies</Value>
+            <Value>Ensure that devices have end point security controls configured as per organizational policies. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#controls-policies&quot;&gt;https://aka.ms/tmtconfigmgmt#controls-policies&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7224,10 +7224,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that binaries are obfuscated if they contain sensitive information. Refer: https://aka.ms/tmtdata#binaries-info</Value>
+            <Value>Ensure that binaries are obfuscated if they contain sensitive information. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#binaries-info&quot;&gt;https://aka.ms/tmtdata#binaries-info&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7276,10 +7276,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that deployed application's binaries are digitally signed. Refer: https://aka.ms/tmtauthn#binaries-signed</Value>
+            <Value>Ensure that deployed application's binaries are digitally signed. Refer: &lt;a href=&quot;https://aka.ms/tmtauthn#binaries-signed&quot;&gt;https://aka.ms/tmtauthn#binaries-signed&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7328,10 +7328,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement Content Security Policy (CSP), and disable inline javascript. Refer: https://aka.ms/tmtconfigmgmt#csp-js  Enable browser's XSS filter. Refer: https://aka.ms/tmtconfigmgmt#xss-filter  Access third party javascripts from trusted sources only. Refer: https://aka.ms/tmtconfigmgmt#js-trusted  Enable ValidateRequest attribute on ASP.NET Pages. Refer: https://aka.ms/tmtconfigmgmt#validate-aspnet  Ensure that each page that could contain user controllable content opts out of automatic MIME sniffing . Refer: https://aka.ms/tmtinputval#out-sniffing  Use locally-hosted latest versions of JavaScript libraries . Refer: https://aka.ms/tmtconfigmgmt#local-js  Ensure appropriate controls are in place when accepting files from users. Refer: https://aka.ms/tmtinputval#controls-users  Disable automatic MIME sniffing. Refer: https://aka.ms/tmtconfigmgmt#mime-sniff  Encode untrusted web output prior to rendering. Refer: https://aka.ms/tmtinputval#rendering  Perform input validation and filtering on all string type Model properties. Refer: https://aka.ms/tmtinputval#typemodel  Ensure that the system has inbuilt defenses against misuse. Refer: https://aka.ms/tmtauditlog#inbuilt-defenses  Enable HTTP Strict Transport Security (HSTS). Refer: https://aka.ms/tmtcommsec#http-hsts  Implement input validation on all string type parameters accepted by Controller methods. Refer: https://aka.ms/tmtinputval#string-method  Avoid using Html.Raw in Razor views. Refer: https://aka.ms/tmtinputval#html-razor  Sanitization should be applied on form fields that accept all characters e.g, rich text editor . Refer: https://aka.ms/tmtinputval#richtext  Do not assign DOM elements to sinks that do not have inbuilt encoding . Refer: https://aka.ms/tmtinputval#inbuilt-encode</Value>
+            <Value>Implement Content Security Policy (CSP), and disable inline javascript. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#csp-js&quot;&gt;https://aka.ms/tmtconfigmgmt#csp-js&lt;/a&gt;  Enable browser's XSS filter. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#xss-filter&quot;&gt;https://aka.ms/tmtconfigmgmt#xss-filter&lt;/a&gt;  Access third party javascripts from trusted sources only. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#js-trusted&quot;&gt;https://aka.ms/tmtconfigmgmt#js-trusted&lt;/a&gt;  Enable ValidateRequest attribute on ASP.NET Pages. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#validate-aspnet&quot;&gt;https://aka.ms/tmtconfigmgmt#validate-aspnet&lt;/a&gt;  Ensure that each page that could contain user controllable content opts out of automatic MIME sniffing . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#out-sniffing&quot;&gt;https://aka.ms/tmtinputval#out-sniffing&lt;/a&gt;  Use locally-hosted latest versions of JavaScript libraries . Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#local-js&quot;&gt;https://aka.ms/tmtconfigmgmt#local-js&lt;/a&gt;  Ensure appropriate controls are in place when accepting files from users. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#controls-users&quot;&gt;https://aka.ms/tmtinputval#controls-users&lt;/a&gt;  Disable automatic MIME sniffing. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#mime-sniff&quot;&gt;https://aka.ms/tmtconfigmgmt#mime-sniff&lt;/a&gt;  Encode untrusted web output prior to rendering. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#rendering&quot;&gt;https://aka.ms/tmtinputval#rendering&lt;/a&gt;  Perform input validation and filtering on all string type Model properties. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#typemodel&quot;&gt;https://aka.ms/tmtinputval#typemodel&lt;/a&gt;  Ensure that the system has inbuilt defenses against misuse. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#inbuilt-defenses&quot;&gt;https://aka.ms/tmtauditlog#inbuilt-defenses&lt;/a&gt;  Enable HTTP Strict Transport Security (HSTS). Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#http-hsts&quot;&gt;https://aka.ms/tmtcommsec#http-hsts&lt;/a&gt;  Implement input validation on all string type parameters accepted by Controller methods. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#string-method&quot;&gt;https://aka.ms/tmtinputval#string-method&lt;/a&gt;  Avoid using Html.Raw in Razor views. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#html-razor&quot;&gt;https://aka.ms/tmtinputval#html-razor&lt;/a&gt;  Sanitization should be applied on form fields that accept all characters e.g, rich text editor . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#richtext&quot;&gt;https://aka.ms/tmtinputval#richtext&lt;/a&gt;  Do not assign DOM elements to sinks that do not have inbuilt encoding . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#inbuilt-encode&quot;&gt;https://aka.ms/tmtinputval#inbuilt-encode&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7422,10 +7422,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that the Cloud Gateway implements a process to keep the connected devices firmware up to date. Refer: https://aka.ms/tmtconfigmgmt#cloud-firmware</Value>
+            <Value>Ensure that the Cloud Gateway implements a process to keep the connected devices firmware up to date. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#cloud-firmware&quot;&gt;https://aka.ms/tmtconfigmgmt#cloud-firmware&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7474,10 +7474,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Store Cryptographic Keys securely on IoT Device. Refer: https://aka.ms/tmtcrypto#keys-iot</Value>
+            <Value>Store Cryptographic Keys securely on IoT Device. Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#keys-iot&quot;&gt;https://aka.ms/tmtcrypto#keys-iot&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7526,10 +7526,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: https://aka.ms/tmtcommsec#x509-ssltls</Value>
+            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#x509-ssltls&quot;&gt;https://aka.ms/tmtcommsec#x509-ssltls&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7578,10 +7578,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that unknown code cannot execute on devices. Refer: https://aka.ms/tmtconfigmgmt#unknown-exe</Value>
+            <Value>Ensure that unknown code cannot execute on devices. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#unknown-exe&quot;&gt;https://aka.ms/tmtconfigmgmt#unknown-exe&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7630,10 +7630,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt OS and additional partitions of IoT Device with Bitlocker. Refer: https://aka.ms/tmtconfigmgmt#partition-iot</Value>
+            <Value>Encrypt OS and additional partitions of IoT Device with Bitlocker. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#partition-iot&quot;&gt;https://aka.ms/tmtconfigmgmt#partition-iot&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7682,10 +7682,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Secure communication to Event Hub using SSL/TLS. Refer: https://aka.ms/tmtcommsec#comm-ssltls</Value>
+            <Value>Secure communication to Event Hub using SSL/TLS. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#comm-ssltls&quot;&gt;https://aka.ms/tmtcommsec#comm-ssltls&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7734,10 +7734,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Validate MD5 hash after downloading blob if HTTPS cannot be enabled. Refer: https://aka.ms/tmtcommsec#md5-https</Value>
+            <Value>Validate MD5 hash after downloading blob if HTTPS cannot be enabled. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#md5-https&quot;&gt;https://aka.ms/tmtcommsec#md5-https&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7786,10 +7786,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>SSIS packages should be encrypted and digitally signed . Refer: https://aka.ms/tmtcrypto#ssis-signed</Value>
+            <Value>SSIS packages should be encrypted and digitally signed . Refer: &lt;a href=&quot;https://aka.ms/tmtcrypto#ssis-signed&quot;&gt;https://aka.ms/tmtcrypto#ssis-signed&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7838,10 +7838,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable Threat detection on Azure SQL database. Refer: https://aka.ms/tmtauditlog#threat-detection</Value>
+            <Value>Enable Threat detection on Azure SQL database. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#threat-detection&quot;&gt;https://aka.ms/tmtauditlog#threat-detection&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7890,10 +7890,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt OS and additional partitions of IoT Field Gateway with Bitlocker. Refer: https://aka.ms/tmtconfigmgmt#field-bitlocker</Value>
+            <Value>Encrypt OS and additional partitions of IoT Field Gateway with Bitlocker. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#field-bitlocker&quot;&gt;https://aka.ms/tmtconfigmgmt#field-bitlocker&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7942,10 +7942,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Obfuscate generated binaries before distributing to end users. Refer: https://aka.ms/tmtdata#binaries-end</Value>
+            <Value>Obfuscate generated binaries before distributing to end users. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#binaries-end&quot;&gt;https://aka.ms/tmtdata#binaries-end&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -7994,10 +7994,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that type-safe parameters are used in Web Application for data access. Refer: https://aka.ms/tmtinputval#typesafe</Value>
+            <Value>Ensure that type-safe parameters are used in Web Application for data access. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#typesafe&quot;&gt;https://aka.ms/tmtinputval#typesafe&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -8046,10 +8046,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that type-safe parameters are used in Web API for data access. Refer: https://aka.ms/tmtinputval#typesafe-api</Value>
+            <Value>Ensure that type-safe parameters are used in Web API for data access. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#typesafe-api&quot;&gt;https://aka.ms/tmtinputval#typesafe-api&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
@@ -8098,10 +8098,10 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt sections of Web App's configuration files that contain sensitive data. Refer: https://aka.ms/tmtdata#encrypt-data</Value>
+            <Value>Encrypt sections of Web App's configuration files that contain sensitive data. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#encrypt-data&quot;&gt;https://aka.ms/tmtdata#encrypt-data&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
-          <AttributeType>0</AttributeType>
+          <AttributeType>2</AttributeType>
         </ThreatMetaDatum>
         <ThreatMetaDatum>
           <Name>Priority</Name>
