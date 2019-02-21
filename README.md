@@ -15,7 +15,7 @@ or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any addi
 
 ## Data/Telemetry
 
-This project collects usage data and sends it to Microsoft to help improve our products and services. [Read Microsoft's privacy statement to learn more](http://go.microsoft.com/fwlink/?LinkId=521839). Telemetry collection can be disabled by declining to participate in the customer experience improvement program during installation or at any time from the Settings-> Options menu within the Threat Modeling Tool and deselecting "Take part in anonymous customer experience improvement program."
+This project collects usage data and sends it to Microsoft to help improve our products and services. [Read Microsoft's privacy statement to learn more](https://go.microsoft.com/fwlink/?LinkId=521839). Telemetry collection can be disabled by declining to participate in the customer experience improvement program during installation or at any time from the Settings-> Options menu within the Threat Modeling Tool and deselecting "Take part in anonymous customer experience improvement program."
 
 ## Reporting Security Issues
 
