@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Medical Device Model + SDL TM Knowledge Base (Core)" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="4.1.0.409" author="212070411-VM\212070411" />
+  <Manifest name="Medical Device Model + SDL TM Knowledge Base (Core)" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="4.1.0.416" author="GEHC PDS Team" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -3672,6 +3672,12 @@
       <ShortDescription>Abuse is when a legitimate user violates the terms of use for the system without violating a system security policy.</ShortDescription>
       <LongDescription />
     </ThreatCategory>
+    <ThreatCategory>
+      <Name>Privacy</Name>
+      <Id>963cfa0d-0d15-4186-9b4a-4c88154a687a</Id>
+      <ShortDescription />
+      <LongDescription />
+    </ThreatCategory>
   </ThreatCategories>
   <ThreatTypes>
     <ThreatType>
@@ -5602,7 +5608,7 @@
       <ShortTitle>Ionizing Radiation Source safety aspects</ShortTitle>
       <Category>7aa66497-ce96-4295-b2cc-ef556daf0c13</Category>
       <RelatedCategory />
-      <Description>{target.Name} may have patient safety related aspects.  Consider whether the following items should be addressed by the RAC [safety risk process]: 1)  tampering with settings of the {target.Name} could result in higher-than-intended radiation dosage 2) spoofing communications from the {source.Name} could result in undesired administration of radiation 3) denial of service attacks could result in inability to perform scans at critical times 4) denial of service attacks could result in administering contrast agent when the radition source is not available to perform imaging.</Description>
+      <Description>{target.Name} may have patient safety related aspects.  Consider whether the following items should be addressed by the RAC [safety risk process]: 1)  tampering with settings of the {target.Name} could result in higher-than-intended radiation dosage 2) spoofing communications from the {source.Name} could result in undesired administration of radiation 3) denial of service attacks could result in inability to perform scans at critical times 4) denial of service attacks could result in administering contrast agent when the radiation source is not available to perform imaging.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -5619,7 +5625,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>{target.Name} may have patient safety related aspects.  Consider whether the following items should be addressed by the RAC [safety risk process]: 1)  tampering with settings of the {target.Name} could result in higher-than-intended radiation dosage 2) spoofing communications from the {source.Name} could result in undesired administration of radiation 3) denial of service attacks could result in inability to perform scans at critical times 4) denial of service attacks could result in administering contrast agent when the radition source is not available to perform imaging.</Value>
+            <Value>{target.Name} may have patient safety related aspects.  Consider whether the following items should be addressed by the RAC [safety risk process]: 1)  tampering with settings of the {target.Name} could result in higher-than-intended radiation dosage 2) spoofing communications from the {source.Name} could result in undesired administration of radiation 3) denial of service attacks could result in inability to perform scans at critical times 4) denial of service attacks could result in administering contrast agent when the radiation source is not available to perform imaging.</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -5822,7 +5828,7 @@
       <ShortTitle>Sensor Safety Aspects</ShortTitle>
       <Category>7aa66497-ce96-4295-b2cc-ef556daf0c13</Category>
       <RelatedCategory />
-      <Description>{target.Name} may have patient safety related aspects.  Consider whether the following item should be addressed by the RAC [safety risk process]: An attacker may reconfigure or spoof a sensor, causing downstream impacts to the rest of the medical device, potentially leading to innacurate medical decisions and/or unsafe activation of physical component</Description>
+      <Description>{target.Name} may have patient safety related aspects.  Consider whether the following item should be addressed by the RAC [safety risk process]: An attacker may reconfigure or spoof a sensor, causing downstream impacts to the rest of the medical device, potentially leading to inaccurate medical decisions and/or unsafe activation of physical component</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -5839,7 +5845,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>{target.Name} may have patient safety related aspects.  Consider whether the following item should be addressed by the RAC [safety risk process]: An attacker may reconfigure or spoof a sensor, causing downstream impacts to the rest of the medical device, potentially leading to innacurate medical decisions and/or unsafe activation of physical component</Value>
+            <Value>{target.Name} may have patient safety related aspects.  Consider whether the following item should be addressed by the RAC [safety risk process]: An attacker may reconfigure or spoof a sensor, causing downstream impacts to the rest of the medical device, potentially leading to inaccurate medical decisions and/or unsafe activation of physical component</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -5998,7 +6004,7 @@
       <ShortTitle>Integrity of data transmitted from {source.Name} to {target.Name}</ShortTitle>
       <Category>7aa66497-ce96-4295-b2cc-ef556daf0c13</Category>
       <RelatedCategory />
-      <Description>Consider whether the following item should be addressed by the RAC [safety risk process]:  Malicous tampering with PHI sent between the {source.Name} and {target.Name} could lead to misdiagnosis or other inappropriate medical actions.   Recommend using a data flow type that will to ensure the integrity of the data transmitted.</Description>
+      <Description>Consider whether the following item should be addressed by the RAC [safety risk process]:  Malicious tampering with PHI sent between the {source.Name} and {target.Name} could lead to misdiagnosis or other inappropriate medical actions.   Recommend using a data flow type that will to ensure the integrity of the data transmitted.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -6015,7 +6021,51 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Consider whether the following item should be addressed by the RAC [safety risk process]:  Malicous tampering with PHI sent between the {source.Name} and {target.Name} could lead to misdiagnosis or other inappropriate medical actions.   Recommend using a data flow type that will to ensure the integrity of the data transmitted.</Value>
+            <Value>Consider whether the following item should be addressed by the RAC [safety risk process]:  Malicious tampering with PHI sent between the {source.Name} and {target.Name} could lead to misdiagnosis or other inappropriate medical actions.   Recommend using a data flow type that will to ensure the integrity of the data transmitted.</Value>
+          </Values>
+          <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>bc9c6e2a-15d0-4863-9cac-589e51e4ca1e</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>flow is 'a4d343c4-b3c9-46b7-aed9-d1210643208c' and (flow crosses 'GE.TB.L' or flow crosses 'GE.TB.B')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>5747843d-aaa5-464e-bb76-aed620950d96</Id>
+      <ShortTitle>DICOM tampering safety</ShortTitle>
+      <Category>7aa66497-ce96-4295-b2cc-ef556daf0c13</Category>
+      <RelatedCategory />
+      <Description>Consider whether the following item should be addressed by the RAC [safety risk process]: Using unencrypted DICOM would make it possible for an attacker to tamper with images to reverse Right and Left or otherwise modify the image to intentionally bring harm to patients.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>true</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>5d3b996b-aed5-4d95-8cf6-617bb67bf042</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Consider whether the following item should be addressed by the RAC [safety risk process]: Using unencrypted DICOM would make it possible for an attacker to tamper with images to reverse Right and Left or otherwise modify the image to intentionally bring harm to patients.</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -7083,7 +7133,7 @@
       <ShortTitle>Ethernet Frame Sniffing</ShortTitle>
       <Category>I</Category>
       <RelatedCategory />
-      <Description>Do not transmit private or senstivie information using raw ethernet frames unless the network is trusted or a higher-level encryption protocol is used.</Description>
+      <Description>Do not transmit private or sensitive information using raw Ethernet frames unless the network is trusted or a higher-level encryption protocol is used.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -7100,7 +7150,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Do not transmit private or senstivie information using raw ethernet frames unless the network is trusted or a higher-level encryption protocol is used.</Value>
+            <Value>Do not transmit private or sensitive information using raw Ethernet frames unless the network is trusted or a higher-level encryption protocol is used.</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -7303,7 +7353,7 @@
       <ShortTitle>{flow.Name} Information Disclosure</ShortTitle>
       <Category>I</Category>
       <RelatedCategory />
-      <Description>Raw TCP connections are easily observed while in transit.  Encrypted protcols are generally required.  An acceptable mitigation is using a TLS/SSL wrapper.</Description>
+      <Description>Raw TCP connections are easily observed while in transit.  Encrypted protocols are generally required.  An acceptable mitigation is using a TLS/SSL wrapper.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -7320,7 +7370,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Raw TCP connections are easily observed while in transit.  Encrypted protcols are generally required.  An acceptable mitigation is using a TLS/SSL wrapper.</Value>
+            <Value>Raw TCP connections are easily observed while in transit.  Encrypted protocols are generally required.  An acceptable mitigation is using a TLS/SSL wrapper.</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -7391,7 +7441,7 @@
       <ShortTitle>{target.Name} Usage in Public Spaces</ShortTitle>
       <Category>I</Category>
       <RelatedCategory />
-      <Description>{target.Name} may show PHI on the display and be used in public spaces.  Options to consider include 1) reducing the visibility of PHI to only authorized users 2) obfuscating private information such as showing only initials instead of a full last name  3) using idle screensavers and minimized data read-outs</Description>
+      <Description>{target.Name} may show PHI on the display and be used in public spaces.  Options to consider include 1) reducing the visibility of PHI to only authorized users 2) obfuscating private information such as showing only initials instead of a full last name  3) using idle screen savers and minimized data read-outs</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -7408,7 +7458,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>{target.Name} may show PHI on the display and be used in public spaces.  Options to consider include 1) reducing the visibility of PHI to only authorized users 2) obfuscating private information such as showing only initials instead of a full last name  3) using idle screensavers and minimized data read-outs</Value>
+            <Value>{target.Name} may show PHI on the display and be used in public spaces.  Options to consider include 1) reducing the visibility of PHI to only authorized users 2) obfuscating private information such as showing only initials instead of a full last name  3) using idle screen savers and minimized data read-outs</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -7826,7 +7876,7 @@
       <ShortTitle>Wireless Connection via {flow.Name} to {target.Name}</ShortTitle>
       <Category>D</Category>
       <RelatedCategory />
-      <Description>{flow.Name}: Medical components connecting via any form of wireless networking must consider radio frequency interferrence/jamming scenarios.  Components with urgent usage scenarios should consider providing a back-up wired option to avoid scenarios involving wireless jamming.  </Description>
+      <Description>{flow.Name}: Medical components connecting via any form of wireless networking must consider radio frequency interference/jamming scenarios.  Components with urgent usage scenarios should consider providing a back-up wired option to avoid scenarios involving wireless jamming.  </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -7843,7 +7893,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>{flow.Name}: Medical components connecting via any form of wireless networking must consider radio frequency interferrence/jamming scenarios.  Components with urgent usage scenarios should consider providing a back-up wired option to avoid scenarios involving wireless jamming.  </Value>
+            <Value>{flow.Name}: Medical components connecting via any form of wireless networking must consider radio frequency interference/jamming scenarios.  Components with urgent usage scenarios should consider providing a back-up wired option to avoid scenarios involving wireless jamming.  </Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -7870,7 +7920,7 @@
       <ShortTitle>Table Denial of Service</ShortTitle>
       <Category>D</Category>
       <RelatedCategory />
-      <Description>For exam types that use ionizing radiation, causing the {target.Name} to stop working mid-exam could result in unnecessary exposure to radiation and inability of the device to fulfill it's clinical purpose.  Other scenarios to consider:  sending invalid commands that cause the {target.Name} to move beyond appropriate physical limits causing the the table to malfunctionl. </Description>
+      <Description>For exam types that use ionizing radiation, causing the {target.Name} to stop working mid-exam could result in unnecessary exposure to radiation and inability of the device to fulfill it's clinical purpose.  Other scenarios to consider:  sending invalid commands that cause the {target.Name} to move beyond appropriate physical limits causing the the table to malfunction. </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -7887,7 +7937,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>For exam types that use ionizing radiation, causing the {target.Name} to stop working mid-exam could result in unnecessary exposure to radiation and inability of the device to fulfill it's clinical purpose.  Other scenarios to consider:  sending invalid commands that cause the {target.Name} to move beyond appropriate physical limits causing the the table to malfunctionl. </Value>
+            <Value>For exam types that use ionizing radiation, causing the {target.Name} to stop working mid-exam could result in unnecessary exposure to radiation and inability of the device to fulfill it's clinical purpose.  Other scenarios to consider:  sending invalid commands that cause the {target.Name} to move beyond appropriate physical limits causing the the table to malfunction. </Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -8090,7 +8140,7 @@
       <ShortTitle>Ethernet Frame Denial of Service</ShortTitle>
       <Category>D</Category>
       <RelatedCategory />
-      <Description>Raw ethernet frames have numerous options for denial of service attacks.  Usage is strongly discouraged but may be appropriate in some cases with point-to-point networks, however, even then they should be used only with extreme caution.  </Description>
+      <Description>Raw Ethernet frames have numerous options for denial of service attacks.  Usage is strongly discouraged but may be appropriate in some cases with point-to-point networks, however, even then they should be used only with extreme caution.  </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -8107,7 +8157,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Raw ethernet frames have numerous options for denial of service attacks.  Usage is strongly discouraged but may be appropriate in some cases with point-to-point networks, however, even then they should be used only with extreme caution.  </Value>
+            <Value>Raw Ethernet frames have numerous options for denial of service attacks.  Usage is strongly discouraged but may be appropriate in some cases with point-to-point networks, however, even then they should be used only with extreme caution.  </Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -8877,7 +8927,7 @@
       <ShortTitle>{source.Name} Used Routinely - Abuse</ShortTitle>
       <Category>A</Category>
       <RelatedCategory />
-      <Description>Users may elect to use the {source.Name} as an alternative on/off mechansm for the device which can result in wear and tear so the button doesn't work when needed.</Description>
+      <Description>Users may elect to use the {source.Name} as an alternative on/off mechanism for the device which can result in wear and tear so the button doesn't work when needed.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -8894,7 +8944,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Users may elect to use the {source.Name} as an alternative on/off mechansm for the device which can result in wear and tear so the button doesn't work when needed.</Value>
+            <Value>Users may elect to use the {source.Name} as an alternative on/off mechanism for the device which can result in wear and tear so the button doesn't work when needed.</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -8921,7 +8971,7 @@
       <ShortTitle>{source.Name} Used Routinely - Abuse </ShortTitle>
       <Category>A</Category>
       <RelatedCategory />
-      <Description>Users may elect to use the {source.Name} as an alternative on/off mechansm for the device which can result in wear and tear so the interlock doesn't work when needed.</Description>
+      <Description>Users may elect to use the {source.Name} as an alternative on/off mechanism for the device which can result in wear and tear so the interlock doesn't work when needed.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatShortDescription</Name>
@@ -8938,7 +8988,7 @@
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Users may elect to use the {source.Name} as an alternative on/off mechansm for the device which can result in wear and tear so the interlock doesn't work when needed.</Value>
+            <Value>Users may elect to use the {source.Name} as an alternative on/off mechanism for the device which can result in wear and tear so the interlock doesn't work when needed.</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
@@ -9027,6 +9077,50 @@
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value>Clinicians may obtain or attempt to obtain images of VIP patients from a PACS that they do not have a medically valid reason to view. Recommend logging all activities to prevent repudiation.</Value>
+          </Values>
+          <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Priority</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Description>Priority</Description>
+          <Id>bc9c6e2a-15d0-4863-9cac-589e51e4ca1e</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>(flow crosses 'GE.TB.L' or flow crosses 'GE.TB.B' ) and flow.5134edab-0754-4f38-a1f6-d588015571e0 is 'Yes'</Include>
+        <Exclude>flow is 'a4d343c4-b3c9-46b7-aed9-d1210643208c'</Exclude>
+      </GenerationFilters>
+      <Id>ec96dc74-63a3-4d88-acf3-3aa761366b72</Id>
+      <ShortTitle>PII Crossing a Trust Boundary</ShortTitle>
+      <Category>963cfa0d-0d15-4186-9b4a-4c88154a687a</Category>
+      <RelatedCategory />
+      <Description>{flow.Name} crosses a trust boundary and contains Personally Identifiable Information.  Please review the data being transmitted for compliance with all applicable laws and regulations.</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatShortDescription</Name>
+          <Label>Short Description</Label>
+          <HideFromUI>true</HideFromUI>
+          <Values>
+            <Value xsi:nil="true" />
+          </Values>
+          <Id>5d3b996b-aed5-4d95-8cf6-617bb67bf042</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>{flow.Name} crosses a trust boundary and contains Personally Identifiable Information.  Please review the data being transmitted for compliance with all applicable laws and regulations.</Value>
           </Values>
           <Id>cf377f97-9dea-42d6-ae63-b097c4a8ec4d</Id>
           <AttributeType>0</AttributeType>
