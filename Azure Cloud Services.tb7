@@ -10573,7 +10573,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Address stale CNAME DNS records mapping custom domain names to the domain name of the {target.Name} instance. In some cases, deleting the stale CNAME records may be sufficient, while in other cases, the domain name of the {target.Name} instance should be kept to prevent subdomain hijack attacks. Refer: &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-point-internet-domain &quot;&gt;https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-point-internet-domain &lt;/a&gt;</Value>
+            <Value>Address stale CNAME DNS records mapping custom domain names to the domain name of the {target.Name} instance. In some cases, deleting the stale CNAME records may be sufficient, while in other cases, the domain name of the {target.Name} instance should be kept to prevent subdomain hijack attacks. Refer: &lt;a href=&quot;https://aka.ms/tmt-th178 &quot;&gt;https://aka.ms/tmt-th178 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10625,7 +10625,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict access to {target.Name} instances by configuring firewall rules to permit connections from selected networks (e.g. a virtual network or a custom set of IP addresses).For Key Vault client applications behind a firewall trying to access a Key Vault instance, see best practices mentioned here: &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-access-behind-firewall  &quot;&gt;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-access-behind-firewall &lt;/a&gt;</Value>
+            <Value>Restrict access to {target.Name} instances by configuring firewall rules to permit connections from selected networks (e.g. a virtual network or a custom set of IP addresses).For Key Vault client applications behind a firewall trying to access a Key Vault instance, see best practices mentioned here: &lt;a href=&quot;https://aka.ms/tmt-th179 &quot;&gt;https://aka.ms/tmt-th179 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10677,7 +10677,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable audit logging on {target.Name} instances to monitor how and when {target.Name} instances are access, and by whom. Use standard Azure access controls to restrict access to the logs. Refer : &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-logging  &quot;&gt;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-logging &lt;/a&gt;</Value>
+            <Value>Enable audit logging on {target.Name} instances to monitor how and when {target.Name} instances are access, and by whom. Use standard Azure access controls to restrict access to the logs. Refer : &lt;a href=&quot;https://aka.ms/tmt-th180  &quot;&gt;https://aka.ms/tmt-th180 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10729,7 +10729,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Access to the {target.Name} management plane should be restricted by choosing appropriate Role-Based Access Control (RBAC) roles and privileges in accordance with the principle of least privilege. Over permissive or weak authorization rules may potentially permit data plane access (e.g. a user with Contribute (RBAC) permissions to {target.Name} management plane may grant themselves access to the data plane by setting the {target.Name} access policy).   Refer : &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-secure-your-key-vault  &quot;&gt;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-secure-your-key-vault &lt;/a&gt;</Value>
+            <Value>Access to the {target.Name} management plane should be restricted by choosing appropriate Role-Based Access Control (RBAC) roles and privileges in accordance with the principle of least privilege. Over permissive or weak authorization rules may potentially permit data plane access (e.g. a user with Contribute (RBAC) permissions to {target.Name} management plane may grant themselves access to the data plane by setting the {target.Name} access policy).   Refer : &lt;a href=&quot;https://aka.ms/tmt-th181  &quot;&gt;https://aka.ms/tmt-th181 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10781,7 +10781,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Limit {target.Name} data plane access by configuring strict access policies. Grant users, groups and applications the ability to perform only the necessary operations against keys or secrets in a {target.Name} instance. Follow the principle of least privilege and grant privileges only as needed.     Refer : &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-secure-your-key-vault  &quot;&gt;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-secure-your-key-vault &lt;/a&gt;</Value>
+            <Value>Limit {target.Name} data plane access by configuring strict access policies. Grant users, groups and applications the ability to perform only the necessary operations against keys or secrets in a {target.Name} instance. Follow the principle of least privilege and grant privileges only as needed.     Refer : &lt;a href=&quot;https://aka.ms/tmt-th181  &quot;&gt;https://aka.ms/tmt-th181 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10833,7 +10833,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure secure management and storage of Azure Key Vault Service/User Principal certificate. It is recommended to rotate service principal certificate regularly, in accordance with organizational policies. If supported , use managed identities for Azure resources and details can be found here.  Refer : &lt;a href=&quot;https://docs.microsoft.com/en-in/azure/active-directory/managed-identities-azure-resources/overview  &quot;&gt;https://docs.microsoft.com/en-in/azure/active-directory/managed-identities-azure-resources/overview &lt;/a&gt;</Value>
+            <Value>Ensure secure management and storage of Azure Key Vault Service/User Principal certificate. It is recommended to rotate service principal certificate regularly, in accordance with organizational policies. If supported , use managed identities for Azure resources and details can be found here.  Refer : &lt;a href=&quot;https://aka.ms/tmt-th183 &quot;&gt;https://aka.ms/tmt-th183 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10885,7 +10885,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use managed identities for Azure resources and details can be found here at &lt;a href=&quot;https://docs.microsoft.com/en-in/azure/active-directory/managed-identities-azure-resources/overview  &quot;&gt;https://docs.microsoft.com/en-in/azure/active-directory/managed-identities-azure-resources/overview &lt;/a&gt;. If managed identities is not supported , use Service/User Principal and Certificate. If none of the above options are feasible, please ensure secure management and storage of Azure Key Vault Service/User Principal secret . It is recommended to rotate service/user principal secret regularly, in accordance with organizational policies.</Value>
+            <Value>Use managed identities for Azure resources and details can be found here at &lt;a href=&quot;https://aka.ms/tmt-th183  &quot;&gt;https://aka.ms/tmt-th183&lt;/a&gt;. If managed identities is not supported , use Service/User Principal and Certificate. If none of the above options are feasible, please ensure secure management and storage of Azure Key Vault Service/User Principal secret . It is recommended to rotate service/user principal secret regularly, in accordance with organizational policies.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10937,7 +10937,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use managed identities for Azure resources and details can be found here at &lt;a href=&quot;https://docs.microsoft.com/en-in/azure/active-directory/managed-identities-azure-resources/overview  &quot;&gt;https://docs.microsoft.com/en-in/azure/active-directory/managed-identities-azure-resources/overview &lt;/a&gt;. If managed identities is not supported , use Service/User Principal and Certificate. If none of the above options are feasible, please ensure secure management and storage of Azure Key Vault Service/User Principal secret . It is recommended to rotate service/user principal secret regularly, in accordance with organizational policies.</Value>
+            <Value>Use managed identities for Azure resources and details can be found here at &lt;a href=&quot;https://aka.ms/tmt-th183  &quot;&gt;https://aka.ms/tmt-th183 &lt;/a&gt;. If managed identities is not supported , use Service/User Principal and Certificate. If none of the above options are feasible, please ensure secure management and storage of Azure Key Vault Service/User Principal secret . It is recommended to rotate service/user principal secret regularly, in accordance with organizational policies.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10989,7 +10989,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Key Vault's soft delete feature allows recovery of the deleted vaults and vault objects, known as soft-delete . Soft deleted resources are retained for a set period of time, 90 days. Refer : &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-ovw-soft-delete &quot;&gt;https://docs.microsoft.com/en-us/azure/key-vault/key-vault-ovw-soft-delete  &lt;/a&gt;</Value>
+            <Value>Key Vault's soft delete feature allows recovery of the deleted vaults and vault objects, known as soft-delete . Soft deleted resources are retained for a set period of time, 90 days. Refer : &lt;a href=&quot;https://aka.ms/tmt-th186 &quot;&gt;https://aka.ms/tmt-th186 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
