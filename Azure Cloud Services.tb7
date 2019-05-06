@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.31" author="Microsoft C+AI Security" />
+  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.32" author="Microsoft C+AI Security" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -1847,7 +1847,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defenses. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#ui-defenses&quot;&gt;https://aka.ms/tmtconfigmgmt#ui-defenses&lt;/a&gt;  Ensure that only trusted origins are allowed if CORS is enabled on ASP.NET Web Applications. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#cors-aspnet&quot;&gt;https://aka.ms/tmtconfigmgmt#cors-aspnet&lt;/a&gt;  Mitigate against Cross-Site Request Forgery (CSRF) attacks on ASP.NET web pages. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#csrf-asp&quot;&gt;https://aka.ms/tmtsmgmt#csrf-asp&lt;/a&gt;</Value>
+            <Value>Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defences. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#ui-defenses&quot;&gt;https://aka.ms/tmtconfigmgmt#ui-defenses&lt;/a&gt;  Ensure that only trusted origins are allowed if CORS is enabled on ASP.NET Web Applications. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#cors-aspnet&quot;&gt;https://aka.ms/tmtconfigmgmt#cors-aspnet&lt;/a&gt;  Mitigate against Cross-Site Request Forgery (CSRF) attacks on ASP.NET web pages. Refer: &lt;a href=&quot;https://aka.ms/tmtsmgmt#csrf-asp&quot;&gt;https://aka.ms/tmtsmgmt#csrf-asp&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -2140,16 +2140,16 @@
         <Exclude>flow.23e2b6f4-fcd8-4e76-a04a-c9ff9aff4f59 is 'No'</Exclude>
       </GenerationFilters>
       <Id>TH116</Id>
-      <ShortTitle>An adversary can can gain unauthorized access to resources in an Azure subscription</ShortTitle>
+      <ShortTitle>An adversary can gain unauthorized access to resources in an Azure subscription</ShortTitle>
       <Category>E</Category>
-      <Description>An adversary can can gain unauthorized access to resources in Azure subscription. The adversary can be either a disgruntled internal user, or someone who has stolen the credentials of an Azure subscription.</Description>
+      <Description>An adversary can gain unauthorized access to resources in Azure subscription. The adversary can be either a disgruntled internal user, or someone who has stolen the credentials of an Azure subscription.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An adversary can can gain unauthorized access to resources in Azure subscription. The adversary can be either a disgruntled internal user, or someone who has stolen the credentials of an Azure subscription.</Value>
+            <Value>An adversary can gain unauthorized access to resources in Azure subscription. The adversary can be either a disgruntled internal user, or someone who has stolen the credentials of an Azure subscription.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -2315,7 +2315,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Minimise access to share feature on critical entities. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#entities&quot;&gt;https://aka.ms/tmtdata#entities&lt;/a&gt;  Train users on the risks associated with the Dynamics CRM Share feature and good security practices. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#good-practices&quot;&gt;https://aka.ms/tmtdata#good-practices&lt;/a&gt;</Value>
+            <Value>Minimize access to share feature on critical entities. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#entities&quot;&gt;https://aka.ms/tmtdata#entities&lt;/a&gt;  Train users on the risks associated with the Dynamics CRM Share feature and good security practices. Refer: &lt;a href=&quot;https://aka.ms/tmtdata#good-practices&quot;&gt;https://aka.ms/tmtdata#good-practices&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -2348,16 +2348,16 @@
         <Exclude />
       </GenerationFilters>
       <Id>TH128</Id>
-      <ShortTitle>Users with CRM Portal access are inadvertantly given access to sensitive records and data</ShortTitle>
+      <ShortTitle>Users with CRM Portal access are inadvertently given access to sensitive records and data</ShortTitle>
       <Category>E</Category>
-      <Description>Users with CRM Portal access are inadvertantly given access to sensitive records and data</Description>
+      <Description>Users with CRM Portal access are inadvertently given access to sensitive records and data</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Users with CRM Portal access are inadvertantly given access to sensitive records and data</Value>
+            <Value>Users with CRM Portal access are inadvertently given access to sensitive records and data</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -3251,7 +3251,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Connect to Event Hub using SAS keys that have the mimimum permissions required. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#sas-minimum-permissions&quot;&gt;https://aka.ms/tmtauthz#sas-minimum-permissions&lt;/a&gt;</Value>
+            <Value>Connect to Event Hub using SAS keys that have the minimum permissions required. Refer: &lt;a href=&quot;https://aka.ms/tmtauthz#sas-minimum-permissions&quot;&gt;https://aka.ms/tmtauthz#sas-minimum-permissions&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -3511,7 +3511,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use Data managent gateway while connecting On Prem SQL Server to Azure Data Factory. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#sqlserver-factory&quot;&gt;https://aka.ms/tmtcommsec#sqlserver-factory&lt;/a&gt;</Value>
+            <Value>Use Data management gateway while connecting On Prem SQL Server to Azure Data Factory. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#sqlserver-factory&quot;&gt;https://aka.ms/tmtcommsec#sqlserver-factory&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -3856,16 +3856,16 @@
         <Exclude />
       </GenerationFilters>
       <Id>TH119</Id>
-      <ShortTitle>Sensitive attributes or fields on an Entity can be inadvertantly disclosed</ShortTitle>
+      <ShortTitle>Sensitive attributes or fields on an Entity can be inadvertently disclosed</ShortTitle>
       <Category>I</Category>
-      <Description>Sensitive attributes or fields on an Entity can be inadvertantly disclosed</Description>
+      <Description>Sensitive attributes or fields on an Entity can be inadvertently disclosed</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Sensitive attributes or fields on an Entity can be inadvertantly disclosed</Value>
+            <Value>Sensitive attributes or fields on an Entity can be inadvertently disclosed</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -3908,16 +3908,16 @@
         <Exclude />
       </GenerationFilters>
       <Id>TH121</Id>
-      <ShortTitle>Sensitive Entity records (containing PII, HBI information) can be inadvertantly disclosed to users who should not have access</ShortTitle>
+      <ShortTitle>Sensitive Entity records (containing PII, HBI information) can be inadvertently disclosed to users who should not have access</ShortTitle>
       <Category>I</Category>
-      <Description>Sensitive Entity records (containing PII, HBI information) can be inadvertantly disclosed to users who should not have access</Description>
+      <Description>Sensitive Entity records (containing PII, HBI information) can be inadvertently disclosed to users who should not have access</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Sensitive Entity records (containing PII, HBI information) can be inadvertantly disclosed to users who should not have access</Value>
+            <Value>Sensitive Entity records (containing PII, HBI information) can be inadvertently disclosed to users who should not have access</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -4707,7 +4707,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Encrypt sensitive data before storing it in {target.Name}.</Value>
+            <Value>Encrypt sensitive data before storing it in Azure Document DB.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -4896,16 +4896,16 @@
         <Exclude>flow.23e2b6f4-fcd8-4e76-a04a-c9ff9aff4f59 is 'No' </Exclude>
       </GenerationFilters>
       <Id>TH73</Id>
-      <ShortTitle>An adversary can gain access to unencrypted secrets in Service Fabric applicatinos</ShortTitle>
+      <ShortTitle>An adversary can gain access to unencrypted secrets in Service Fabric applications</ShortTitle>
       <Category>I</Category>
-      <Description>Secrets can be any sensitive information, such as storage connection strings, passwords, or other values that should not be handled in plain text. If secrets are not encrypted, an adversary who can gain access to them can abusethem.</Description>
+      <Description>Secrets can be any sensitive information, such as storage connection strings, passwords, or other values that should not be handled in plain text. If secrets are not encrypted, an adversary who can gain access to them can abuse them.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Secrets can be any sensitive information, such as storage connection strings, passwords, or other values that should not be handled in plain text. If secrets are not encrypted, an adversary who can gain access to them can abusethem.</Value>
+            <Value>Secrets can be any sensitive information, such as storage connection strings, passwords, or other values that should not be handled in plain text. If secrets are not encrypted, an adversary who can gain access to them can abuse them.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -5539,7 +5539,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Use Azure Storage Analytics to audit access of Azure Storage. If possible, audit the calls to {target.Name} at the source: {source.Name}. Refer: &lt;a href=&quot;https://aka.ms/tmt-th20&quot;&gt;https://aka.ms/tmt-th20&lt;/a&gt;</Value>
+            <Value>Use Azure Storage Analytics to audit access of Azure Storage. If possible, audit the calls to the Azure Storage instance at the source of the call. Refer: &lt;a href=&quot;https://aka.ms/tmt-th20&quot;&gt;https://aka.ms/tmt-th20&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -6718,14 +6718,14 @@
       <Id>TH50</Id>
       <ShortTitle>An adversary may spoof a device and connect to field gateway</ShortTitle>
       <Category>S</Category>
-      <Description>An adversary may spoof a device and connect to field gateway. This may be achieved even when the device is registered in Cloud gateway since the field gateway may not be in sync with the device identites in cloud gateway</Description>
+      <Description>An adversary may spoof a device and connect to field gateway. This may be achieved even when the device is registered in Cloud gateway since the field gateway may not be in sync with the device identities in cloud gateway</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An adversary may spoof a device and connect to field gateway. This may be achieved even when the device is registered in Cloud gateway since the field gateway may not be in sync with the device identites in cloud gateway</Value>
+            <Value>An adversary may spoof a device and connect to field gateway. This may be achieved even when the device is registered in Cloud gateway since the field gateway may not be in sync with the device identities in cloud gateway</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -7288,7 +7288,7 @@
         <Exclude />
       </GenerationFilters>
       <Id>TH8</Id>
-      <ShortTitle>Attacker can steal user session cookies due to insecure cookie attrbutes</ShortTitle>
+      <ShortTitle>Attackers can steal user session cookies due to insecure cookie attributes</ShortTitle>
       <Category>S</Category>
       <Description>The session cookies is the identifier by which the server knows the identity of current user for each incoming request. If the attacker is able to steal the user token he would be able to access all user data and perform all actions on behalf of user. </Description>
       <PropertiesMetaData>
@@ -7359,7 +7359,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#x509-ssltls&quot;&gt;https://aka.ms/tmtcommsec#x509-ssltls&lt;/a&gt;  Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defenses. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#ui-defenses&quot;&gt;https://aka.ms/tmtconfigmgmt#ui-defenses&lt;/a&gt;  Validate all redirects within the application are closed or done safely. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#redirect-safe&quot;&gt;https://aka.ms/tmtinputval#redirect-safe&lt;/a&gt;</Value>
+            <Value>Verify X.509 certificates used to authenticate SSL, TLS, and DTLS connections. Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#x509-ssltls&quot;&gt;https://aka.ms/tmtcommsec#x509-ssltls&lt;/a&gt;  Ensure that authenticated ASP.NET pages incorporate UI Redressing or clickjacking defences. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#ui-defenses&quot;&gt;https://aka.ms/tmtconfigmgmt#ui-defenses&lt;/a&gt;  Validate all redirects within the application are closed or done safely. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#redirect-safe&quot;&gt;https://aka.ms/tmtinputval#redirect-safe&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -7931,7 +7931,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Implement Content Security Policy (CSP), and disable inline javascript. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#csp-js&quot;&gt;https://aka.ms/tmtconfigmgmt#csp-js&lt;/a&gt;  Enable browser's XSS filter. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#xss-filter&quot;&gt;https://aka.ms/tmtconfigmgmt#xss-filter&lt;/a&gt;  Access third party javascripts from trusted sources only. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#js-trusted&quot;&gt;https://aka.ms/tmtconfigmgmt#js-trusted&lt;/a&gt;  Enable ValidateRequest attribute on ASP.NET Pages. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#validate-aspnet&quot;&gt;https://aka.ms/tmtconfigmgmt#validate-aspnet&lt;/a&gt;  Ensure that each page that could contain user controllable content opts out of automatic MIME sniffing . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#out-sniffing&quot;&gt;https://aka.ms/tmtinputval#out-sniffing&lt;/a&gt;  Use locally-hosted latest versions of JavaScript libraries . Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#local-js&quot;&gt;https://aka.ms/tmtconfigmgmt#local-js&lt;/a&gt;  Ensure appropriate controls are in place when accepting files from users. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#controls-users&quot;&gt;https://aka.ms/tmtinputval#controls-users&lt;/a&gt;  Disable automatic MIME sniffing. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#mime-sniff&quot;&gt;https://aka.ms/tmtconfigmgmt#mime-sniff&lt;/a&gt;  Encode untrusted web output prior to rendering. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#rendering&quot;&gt;https://aka.ms/tmtinputval#rendering&lt;/a&gt;  Perform input validation and filtering on all string type Model properties. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#typemodel&quot;&gt;https://aka.ms/tmtinputval#typemodel&lt;/a&gt;  Ensure that the system has inbuilt defenses against misuse. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#inbuilt-defenses&quot;&gt;https://aka.ms/tmtauditlog#inbuilt-defenses&lt;/a&gt;  Enable HTTP Strict Transport Security (HSTS). Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#http-hsts&quot;&gt;https://aka.ms/tmtcommsec#http-hsts&lt;/a&gt;  Implement input validation on all string type parameters accepted by Controller methods. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#string-method&quot;&gt;https://aka.ms/tmtinputval#string-method&lt;/a&gt;  Avoid using Html.Raw in Razor views. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#html-razor&quot;&gt;https://aka.ms/tmtinputval#html-razor&lt;/a&gt;  Sanitization should be applied on form fields that accept all characters e.g, rich text editor . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#richtext&quot;&gt;https://aka.ms/tmtinputval#richtext&lt;/a&gt;  Do not assign DOM elements to sinks that do not have inbuilt encoding . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#inbuilt-encode&quot;&gt;https://aka.ms/tmtinputval#inbuilt-encode&lt;/a&gt;</Value>
+            <Value>Implement Content Security Policy (CSP), and disable inline javascript. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#csp-js&quot;&gt;https://aka.ms/tmtconfigmgmt#csp-js&lt;/a&gt;  Enable browser's XSS filter. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#xss-filter&quot;&gt;https://aka.ms/tmtconfigmgmt#xss-filter&lt;/a&gt;  Access third party javascripts from trusted sources only. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#js-trusted&quot;&gt;https://aka.ms/tmtconfigmgmt#js-trusted&lt;/a&gt;  Enable ValidateRequest attribute on ASP.NET Pages. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#validate-aspnet&quot;&gt;https://aka.ms/tmtconfigmgmt#validate-aspnet&lt;/a&gt;  Ensure that each page that could contain user controllable content opts out of automatic MIME sniffing . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#out-sniffing&quot;&gt;https://aka.ms/tmtinputval#out-sniffing&lt;/a&gt;  Use locally-hosted latest versions of JavaScript libraries . Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#local-js&quot;&gt;https://aka.ms/tmtconfigmgmt#local-js&lt;/a&gt;  Ensure appropriate controls are in place when accepting files from users. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#controls-users&quot;&gt;https://aka.ms/tmtinputval#controls-users&lt;/a&gt;  Disable automatic MIME sniffing. Refer: &lt;a href=&quot;https://aka.ms/tmtconfigmgmt#mime-sniff&quot;&gt;https://aka.ms/tmtconfigmgmt#mime-sniff&lt;/a&gt;  Encode untrusted web output prior to rendering. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#rendering&quot;&gt;https://aka.ms/tmtinputval#rendering&lt;/a&gt;  Perform input validation and filtering on all string type Model properties. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#typemodel&quot;&gt;https://aka.ms/tmtinputval#typemodel&lt;/a&gt;  Ensure that the system has inbuilt defences against misuse. Refer: &lt;a href=&quot;https://aka.ms/tmtauditlog#inbuilt-defenses&quot;&gt;https://aka.ms/tmtauditlog#inbuilt-defenses&lt;/a&gt;  Enable HTTP Strict Transport Security (HSTS). Refer: &lt;a href=&quot;https://aka.ms/tmtcommsec#http-hsts&quot;&gt;https://aka.ms/tmtcommsec#http-hsts&lt;/a&gt;  Implement input validation on all string type parameters accepted by Controller methods. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#string-method&quot;&gt;https://aka.ms/tmtinputval#string-method&lt;/a&gt;  Avoid using Html.Raw in Razor views. Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#html-razor&quot;&gt;https://aka.ms/tmtinputval#html-razor&lt;/a&gt;  Sanitization should be applied on form fields that accept all characters e.g, rich text editor . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#richtext&quot;&gt;https://aka.ms/tmtinputval#richtext&lt;/a&gt;  Do not assign DOM elements to sinks that do not have inbuilt encoding . Refer: &lt;a href=&quot;https://aka.ms/tmtinputval#inbuilt-encode&quot;&gt;https://aka.ms/tmtinputval#inbuilt-encode&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -8216,14 +8216,14 @@
       <Id>TH47</Id>
       <ShortTitle>An adversary may tamper the OS of a device and launch offline attacks</ShortTitle>
       <Category>T</Category>
-      <Description>An adversary may launch offline attacks attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately.</Description>
+      <Description>An adversary may launch offline attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An adversary may launch offline attacks attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately.</Value>
+            <Value>An adversary may launch offline attacks made by disabling or circumventing the installed operating system, or made by physically separating the storage media from the device in order to attack the data separately.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -8422,16 +8422,16 @@
         <Exclude />
       </GenerationFilters>
       <Id>TH89</Id>
-      <ShortTitle>An adversary may leverage the lack of monitoring systems and trigger anamolous traffic to database</ShortTitle>
+      <ShortTitle>An adversary may leverage the lack of monitoring systems and trigger anomalous traffic to database</ShortTitle>
       <Category>T</Category>
-      <Description>An adversary may leverage the lack of intrusion detection and prevention  of anomalous database activities and  trigger anamolous traffic to database</Description>
+      <Description>An adversary may leverage the lack of intrusion detection and prevention  of anomalous database activities and  trigger anomalous traffic to database</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An adversary may leverage the lack of intrusion detection and prevention  of anomalous database activities and  trigger anamolous traffic to database</Value>
+            <Value>An adversary may leverage the lack of intrusion detection and prevention  of anomalous database activities and  trigger anomalous traffic to database</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -9100,7 +9100,7 @@
       <Id>TH150</Id>
       <ShortTitle>An adversary can gain unauthorized access to Azure MySQL DB instances due to weak network security configuration</ShortTitle>
       <Category>E</Category>
-      <Description>An adversary can gain unauthorized access to Azure MySQL DB instances due to weak network security configuration.</Description>
+      <Description>An adversary can gain unauthorized access to {target.Name} instances due to weak network security configuration.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9117,7 +9117,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict access to {target.Name} instances by configuring server-level firewall rules to only permit connections from selected IP addresses where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th150&quot;&gt;https://aka.ms/tmt-th150&lt;/a&gt;</Value>
+            <Value>Restrict access to Azure MySQL DB instances by configuring server-level firewall rules to only permit connections from selected IP addresses where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th150&quot;&gt;https://aka.ms/tmt-th150&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -9152,7 +9152,7 @@
       <Id>TH151</Id>
       <ShortTitle>An adversary may read and/or tamper with the data transmitted to Azure MySQL DB due to weak configuration</ShortTitle>
       <Category>T</Category>
-      <Description>An adversary may read and/or tamper with the data transmitted to Azure MySQL DB due to weak configuration.</Description>
+      <Description>An adversary may read and/or tamper with the data transmitted to {target.Name} due to weak configuration.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9169,7 +9169,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enforce communication between clients and {target.Name} to be over SSL/TLS by enabling the Enforce SSL connection feature on the server. Check that the connection strings used to connect to MySQL databases have the right configuration (e.g. ssl = true or sslmode=require or sslmode=true are set). Refer: &lt;a href=&quot;https://aka.ms/tmt-th151a&quot;&gt;https://aka.ms/tmt-th151a&lt;/a&gt; Configure MySQL server to use a verifiable SSL certificate (needed for SSL/TLS communication). Refer: &lt;a href=&quot;https://aka.ms/tmt-th151b&quot;&gt;https://aka.ms/tmt-th151b&lt;/a&gt;</Value>
+            <Value>Enforce communication between clients and Azure MySQL DB to be over SSL/TLS by enabling the Enforce SSL connection feature on the server. Check that the connection strings used to connect to MySQL databases have the right configuration (e.g. ssl = true or sslmode=require or sslmode=true are set). Refer: &lt;a href=&quot;https://aka.ms/tmt-th151a&quot;&gt;https://aka.ms/tmt-th151a&lt;/a&gt; Configure MySQL server to use a verifiable SSL certificate (needed for SSL/TLS communication). Refer: &lt;a href=&quot;https://aka.ms/tmt-th151b&quot;&gt;https://aka.ms/tmt-th151b&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -9204,7 +9204,7 @@
       <Id>TH152</Id>
       <ShortTitle>An adversary can gain long term, persistent access to an Azure MySQL DB instance through the compromise of local user account password(s)</ShortTitle>
       <Category>E</Category>
-      <Description>An adversary can gain long term, persistent access to an Azure MySQL DB instance through the compromise of local user account password(s).</Description>
+      <Description>An adversary can gain long term, persistent access to {target.Name} instance through the compromise of local user account password(s).</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9256,7 +9256,7 @@
       <Id>TH153</Id>
       <ShortTitle>An adversary can gain unauthorized access to Azure Postgres DB instances due to weak network security configuration</ShortTitle>
       <Category>E</Category>
-      <Description>An adversary can gain unauthorized access to  Azure Postgres DB instances due to weak network security configuration.</Description>
+      <Description>An adversary can gain unauthorized access to  {target.Name} instances due to weak network security configuration.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9273,7 +9273,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict access to {target.Name} instances by configuring server-level firewall rules to only permit connections from selected IP addresses where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th153&quot;&gt;https://aka.ms/tmt-th153&lt;/a&gt;</Value>
+            <Value>Restrict access to Azure Postgres DB instances by configuring server-level firewall rules to only permit connections from selected IP addresses where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th153&quot;&gt;https://aka.ms/tmt-th153&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -9308,7 +9308,7 @@
       <Id>TH154</Id>
       <ShortTitle>An adversary may read and/or tamper with the data transmitted to Azure Postgres DB due to weak configuration</ShortTitle>
       <Category>T</Category>
-      <Description>An adversary may read and/or tamper with the data transmitted to Azure Postgres DB due to weak configuration.</Description>
+      <Description>An adversary may read and/or tamper with the data transmitted to {target.Name} due to weak configuration.</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9325,7 +9325,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enforce communication between clients and {target.Name} to be over SSL/TLS by enabling the Enforce SSL connection feature on the server. Check that the connection strings used to connect to MySQL databases have the right configuration (e.g. ssl = true or sslmode=require or sslmode=true are set). Refer: &lt;a href=&quot;https://aka.ms/tmt-th154a&quot;&gt;https://aka.ms/tmt-th154a&lt;/a&gt; Configure MySQL server to use a verifiable SSL certificate (needed for SSL/TLS communication). Refer: &lt;a href=&quot;https://aka.ms/tmt-th154b&quot;&gt;https://aka.ms/tmt-th154b&lt;/a&gt;</Value>
+            <Value>Enforce communication between clients and Azure Postgres DB to be over SSL/TLS by enabling the Enforce SSL connection feature on the server. Check that the connection strings used to connect to MySQL databases have the right configuration (e.g. ssl = true or sslmode=require or sslmode=true are set). Refer: &lt;a href=&quot;https://aka.ms/tmt-th154a&quot;&gt;https://aka.ms/tmt-th154a&lt;/a&gt; Configure MySQL server to use a verifiable SSL certificate (needed for SSL/TLS communication). Refer: &lt;a href=&quot;https://aka.ms/tmt-th154b&quot;&gt;https://aka.ms/tmt-th154b&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -9360,7 +9360,7 @@
       <Id>TH155</Id>
       <ShortTitle>An adversary can gain long term, persistent access to an Azure Postgres DB instance through the compromise of local user account password(s)</ShortTitle>
       <Category>E</Category>
-      <Description>An adversary can gain long term, persistent access to an Azure Postgres DB instance through the compromise of local user account password(s).</Description>
+      <Description>An adversary can gain long term, persistent access to {target.Name} instance through the compromise of local user account password(s).</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9464,7 +9464,7 @@
       <Id>TH157</Id>
       <ShortTitle>An adversary can gain unauthorized access to Azure SQL DW DB instances due to weak network security configuration</ShortTitle>
       <Category>E</Category>
-      <Description>An adversary can gain unauthorized access to Azure SQL DW DB instances due to weak network security configuration</Description>
+      <Description>An adversary can gain unauthorized access to {target.Name} instances due to weak network security configuration</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9481,7 +9481,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict access to {target.Name} instances by configuring server-level firewall rules to permit connections from selected networks (e.g. a virtual network or a custom set of IP addresses) where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th157&quot;&gt;https://aka.ms/tmt-th157&lt;/a&gt;.</Value>
+            <Value>Restrict access to Azure SQL DW DB instances by configuring server-level firewall rules to permit connections from selected networks (e.g. a virtual network or a custom set of IP addresses) where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th157&quot;&gt;https://aka.ms/tmt-th157&lt;/a&gt;.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -9516,7 +9516,7 @@
       <Id>TH158</Id>
       <ShortTitle>An adversary can read confidential data or tamper with it due to weak connection string configuration</ShortTitle>
       <Category>T</Category>
-      <Description>An adversary can read confidential data or tamper with it due to weak connection string configuration</Description>
+      <Description>An adversary can read confidential data or tamper with it due to weak connection string configuration at {target.Name} </Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
@@ -9533,7 +9533,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Clients connecting to a {target.Name} instance using a connection string should ensure that encryption is enabled and trusting the server certificate by default is disabled (e.g. encrypt=true and trustservercertificate=false are set). This configuration ensures that connections are encrypted only if there is a verifiable server certificate (otherwise the connection attempt fails). This helps protect against Man-In-The-Middle attacks. Refer: &lt;a href=&quot;https://aka.ms/tmt-th158&quot;&gt;https://aka.ms/tmt-th158&lt;/a&gt;.</Value>
+            <Value>Clients connecting to a Azure SQL DW DB instance using a connection string should ensure that encryption is enabled and trusting the server certificate by default is disabled (e.g. encrypt=true and trustservercertificate=false are set). This configuration ensures that connections are encrypted only if there is a verifiable server certificate (otherwise the connection attempt fails). This helps protect against Man-In-The-Middle attacks. Refer: &lt;a href=&quot;https://aka.ms/tmt-th158&quot;&gt;https://aka.ms/tmt-th158&lt;/a&gt;.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -9689,7 +9689,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable auditing on {target.Name} instances to track and log database events. After configuring and customizing the audited events, enable threat detection to receive alerts on anomalous activities indicating potential security threats. Refer: &lt;a href=&quot;https://aka.ms/tmt-th161&quot;&gt;https://aka.ms/tmt-th161&lt;/a&gt;.</Value>
+            <Value>Enable auditing on Azure SQL DW DB instances to track and log database events. After configuring and customizing the audited events, enable threat detection to receive alerts on anomalous activities indicating potential security threats. Refer: &lt;a href=&quot;https://aka.ms/tmt-th161&quot;&gt;https://aka.ms/tmt-th161&lt;/a&gt;.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -9774,16 +9774,16 @@
         <Exclude />
       </GenerationFilters>
       <Id>TH163</Id>
-      <ShortTitle>An adversary can gain unauthorized access to Azure Redis Cache instances due to weak network security configuration</ShortTitle>
+      <ShortTitle>An adversary can gain unauthorized access to {target.Name} instances due to weak network security configuration</ShortTitle>
       <Category>E</Category>
-      <Description>An adversary can gain unauthorized access to Azure Redis Cache instances due to weak network security configuration</Description>
+      <Description>An adversary can gain unauthorized access to {target.Name} instances due to weak network security configuration</Description>
       <PropertiesMetaData>
         <ThreatMetaDatum>
           <Name>UserThreatDescription</Name>
           <Label>Description</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>An adversary can gain unauthorized access to Azure Redis Cache instances due to weak network security configuration</Value>
+            <Value>An adversary can gain unauthorized access to {target.Name} instances due to weak network security configuration</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>0</AttributeType>
@@ -9793,7 +9793,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict access to {target.Name} instances by configuring firewall rules to only permit connections from selected IP addresses or VNETs where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th163&quot;&gt;https://aka.ms/tmt-th163&lt;/a&gt;.</Value>
+            <Value>Restrict access to Azure Redis Cache instances by configuring firewall rules to only permit connections from selected IP addresses or VNETs where possible. Refer: &lt;a href=&quot;https://aka.ms/tmt-th163&quot;&gt;https://aka.ms/tmt-th163&lt;/a&gt;.</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10001,7 +10001,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict access to {target.Name} to selected networks (e.g. IP whitelisting, VNET integrations). Refer: &lt;a href=&quot;https://aka.ms/tmt-th167&quot;&gt;https://aka.ms/tmt-th167&lt;/a&gt;</Value>
+            <Value>Restrict access to Azure App Service to selected networks (e.g. IP whitelisting, VNET integrations). Refer: &lt;a href=&quot;https://aka.ms/tmt-th167&quot;&gt;https://aka.ms/tmt-th167&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10417,7 +10417,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Configure SSL certificate for custom domain in {target.Name}. Force all HTTP traffic to {target.Name} to be over HTTPS by enabling the HTTPS only option on the {target.Name} instance. Refer: &lt;a href=&quot;https://aka.ms/tmt-th175a&quot;&gt;https://aka.ms/tmt-th175a&lt;/a&gt; and &lt;a href=&quot;https://aka.ms/tmt-th175b&quot;&gt;https://aka.ms/tmt-th175b&lt;/a&gt;. Enable HTTP Strict Transport Security (HSTS). Refer: &lt;a href=&quot;https://aka.ms/tmt-th175c&quot;&gt;https://aka.ms/tmt-th175c&lt;/a&gt;</Value>
+            <Value>Configure SSL certificate for custom domain in Azure App Service. Force all HTTP traffic to the app service to be over HTTPS by enabling the HTTPS only option on the instance. Refer: &lt;a href=&quot;https://aka.ms/tmt-th175a&quot;&gt;https://aka.ms/tmt-th175a&lt;/a&gt; and &lt;a href=&quot;https://aka.ms/tmt-th175b&quot;&gt;https://aka.ms/tmt-th175b&lt;/a&gt;. Enable HTTP Strict Transport Security (HSTS). Refer: &lt;a href=&quot;https://aka.ms/tmt-th175c&quot;&gt;https://aka.ms/tmt-th175c&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10521,7 +10521,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Ensure that authenticated pages incorporate UI Redressing or clickjacking defenses. Refer: &lt;a href=&quot;https://aka.ms/tmt-th177a&quot;&gt;https://aka.ms/tmt-th177a&lt;/a&gt;. Mitigate against Cross-Site Request Forgery (CSRF) attacks. Refer: &lt;a href=&quot;https://aka.ms/tmt-th177b&quot;&gt;https://aka.ms/tmt-th177b&lt;/a&gt; and &lt;a href=&quot;https://aka.ms/tmt-th177c&quot;&gt;https://aka.ms/tmt-th177c&lt;/a&gt;</Value>
+            <Value>Ensure that authenticated pages incorporate UI Redressing or clickjacking defences. Refer: &lt;a href=&quot;https://aka.ms/tmt-th177a&quot;&gt;https://aka.ms/tmt-th177a&lt;/a&gt;. Mitigate against Cross-Site Request Forgery (CSRF) attacks. Refer: &lt;a href=&quot;https://aka.ms/tmt-th177b&quot;&gt;https://aka.ms/tmt-th177b&lt;/a&gt; and &lt;a href=&quot;https://aka.ms/tmt-th177c&quot;&gt;https://aka.ms/tmt-th177c&lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10573,7 +10573,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Address stale CNAME DNS records mapping custom domain names to the domain name of the {target.Name} instance. In some cases, deleting the stale CNAME records may be sufficient, while in other cases, the domain name of the {target.Name} instance should be kept to prevent subdomain hijack attacks. Refer: &lt;a href=&quot;https://aka.ms/tmt-th178 &quot;&gt;https://aka.ms/tmt-th178 &lt;/a&gt;</Value>
+            <Value>Address stale CNAME DNS records mapping custom domain names to the domain name of the Azure Traffic Manager instance. In some cases, deleting the stale CNAME records may be sufficient, while in other cases, the domain name of the Azure Traffic Manager instance should be kept to prevent subdomain hijack attacks. Refer: &lt;a href=&quot;https://aka.ms/tmt-th178 &quot;&gt;https://aka.ms/tmt-th178 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10625,7 +10625,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Restrict access to {target.Name} instances by configuring firewall rules to permit connections from selected networks (e.g. a virtual network or a custom set of IP addresses).For Key Vault client applications behind a firewall trying to access a Key Vault instance, see best practices mentioned here: &lt;a href=&quot;https://aka.ms/tmt-th179 &quot;&gt;https://aka.ms/tmt-th179 &lt;/a&gt;</Value>
+            <Value>Restrict access to Azure Key Vault instances by configuring firewall rules to permit connections from selected networks (e.g. a virtual network or a custom set of IP addresses).For Key Vault client applications behind a firewall trying to access a Key Vault instance, see best practices mentioned here: &lt;a href=&quot;https://aka.ms/tmt-th179 &quot;&gt;https://aka.ms/tmt-th179 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10677,7 +10677,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Enable audit logging on {target.Name} instances to monitor how and when {target.Name} instances are access, and by whom. Use standard Azure access controls to restrict access to the logs. Refer : &lt;a href=&quot;https://aka.ms/tmt-th180  &quot;&gt;https://aka.ms/tmt-th180 &lt;/a&gt;</Value>
+            <Value>Enable audit logging on Azure Key Vault instances to monitor how and when the instances are access, and by whom. Use standard Azure access controls to restrict access to the logs. Refer : &lt;a href=&quot;https://aka.ms/tmt-th180  &quot;&gt;https://aka.ms/tmt-th180 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10729,7 +10729,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Access to the {target.Name} management plane should be restricted by choosing appropriate Role-Based Access Control (RBAC) roles and privileges in accordance with the principle of least privilege. Over permissive or weak authorization rules may potentially permit data plane access (e.g. a user with Contribute (RBAC) permissions to {target.Name} management plane may grant themselves access to the data plane by setting the {target.Name} access policy).   Refer : &lt;a href=&quot;https://aka.ms/tmt-th181  &quot;&gt;https://aka.ms/tmt-th181 &lt;/a&gt;</Value>
+            <Value>Access to the Azure Key Vault management plane should be restricted by choosing appropriate Role-Based Access Control (RBAC) roles and privileges in accordance with the principle of least privilege. Over permissive or weak authorization rules may potentially permit data plane access (e.g. a user with Contribute (RBAC) permissions to Key Vault management plane may grant themselves access to the data plane by setting the Azure Key Vault access policy).   Refer : &lt;a href=&quot;https://aka.ms/tmt-th181  &quot;&gt;https://aka.ms/tmt-th181 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
@@ -10781,7 +10781,7 @@
           <Label>Possible Mitigation(s)</Label>
           <HideFromUI>false</HideFromUI>
           <Values>
-            <Value>Limit {target.Name} data plane access by configuring strict access policies. Grant users, groups and applications the ability to perform only the necessary operations against keys or secrets in a {target.Name} instance. Follow the principle of least privilege and grant privileges only as needed.     Refer : &lt;a href=&quot;https://aka.ms/tmt-th181  &quot;&gt;https://aka.ms/tmt-th181 &lt;/a&gt;</Value>
+            <Value>Limit Azure Key Vault data plane access by configuring strict access policies. Grant users, groups and applications the ability to perform only the necessary operations against keys or secrets in a Key Vault instance. Follow the principle of least privilege and grant privileges only as needed.     Refer : &lt;a href=&quot;https://aka.ms/tmt-th181  &quot;&gt;https://aka.ms/tmt-th181 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
