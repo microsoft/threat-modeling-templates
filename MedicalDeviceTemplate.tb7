@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Medical Device Model - Third Party Contributed (GE)" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="4.1.0.416" author="GEHC PDS Team" />
+  <Manifest name="Medical Device Model - Community Contributed" id="cc62ebae-3748-431e-b1df-f4220dc9003f" version="4.1.0.416" author="GEHC PDS Team" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
