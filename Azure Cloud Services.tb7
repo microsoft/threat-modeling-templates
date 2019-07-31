@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KnowledgeBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.32" author="Microsoft C+AI Security" />
+  <Manifest name="Azure Threat Model Template" id="11111111-1111-1111-1111-111111111111" version="1.0.0.33" author="Microsoft C+AI Security" />
   <ThreatMetaData>
     <IsPriorityUsed>true</IsPriorityUsed>
     <IsStatusUsed>true</IsStatusUsed>
@@ -967,6 +967,76 @@
       <StrokeThickness>0</StrokeThickness>
       <ImageLocation>Centered on stencil</ImageLocation>
       <Attributes />
+    </ElementType>
+    <ElementType>
+      <Name>Azure Logic Apps</Name>
+      <ID>SE.P.TMCore.ALA</ID>
+      <Description>A representation of Azure Logic Apps</Description>
+      <ParentElement>GE.P</ParentElement>
+      <Image>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</Image>
+      <Hidden>false</Hidden>
+      <Representation>Ellipse</Representation>
+      <StrokeThickness>0</StrokeThickness>
+      <ImageLocation>Centered on stencil</ImageLocation>
+      <Attributes>
+        <Attribute>
+          <Id>33333333-3333-3333-3333-333333333333</Id>
+          <IsInherited>false</IsInherited>
+          <Name>d488c23c-1667-45a1-994b-f56f2655727b</Name>
+          <DisplayName>Nw Level Access Control Config for Triggers</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Select</Value>
+            <Value>Allow any IP inbound</Value>
+            <Value>Allow only other Logic Apps</Value>
+            <Value>Allow specific IP ranges</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>33333333-3333-3333-3333-333333333333</Id>
+          <IsInherited>false</IsInherited>
+          <Name>0b0ab9bc-a582-4509-a6c4-8d56de65661e</Name>
+          <DisplayName>Nw Level Access Control Config for Contents</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Select</Value>
+            <Value>None</Value>
+            <Value>Specific IP</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>33333333-3333-3333-3333-333333333333</Id>
+          <IsInherited>false</IsInherited>
+          <Name>b1724997-7ae6-4b30-a001-9c5b42d9d1d1</Name>
+          <DisplayName>Trigger_action has sensitive inputs_outputs</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Select</Value>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+        <Attribute>
+          <Id>33333333-3333-3333-3333-333333333333</Id>
+          <IsInherited>false</IsInherited>
+          <Name>5afb52dc-dffb-4319-aa22-523f78ee3845</Name>
+          <DisplayName>HTTP request based Trigger</DisplayName>
+          <Mode>Dynamic</Mode>
+          <Type>List</Type>
+          <Inheritance>Virtual</Inheritance>
+          <AttributeValues>
+            <Value>Select</Value>
+            <Value>Yes</Value>
+            <Value>No</Value>
+          </AttributeValues>
+        </Attribute>
+      </Attributes>
     </ElementType>
     <ElementType>
       <Name>Azure ML</Name>
@@ -11000,6 +11070,373 @@
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value>Low</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ALA'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH187</Id>
+      <ShortTitle>An adversary may gain unauthorized access to manage {target.Name} due to weak authorization rules</ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary may gain unauthorized access to manage {target.Name} due to weak authorization rules</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary may gain unauthorized access to manage {target.Name} due to weak authorization rules</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>
+              Access to the Azure Logic Apps management plane should be restricted by assigning the appropriate Role-Based Access Control (RBAC) roles to only those needing the privileges. Follow the principle of least privilege. 
+              Refer : &lt;a href=&quot;https://aka.ms/tmt-th187 &quot;&gt;https://aka.ms/tmt-th187 &lt;/a&gt;
+            </Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ALA' and not target.0b0ab9bc-a582-4509-a6c4-8d56de65661e is 'Specific IP'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH188</Id>
+      <ShortTitle>An adversary may gain unauthorized access to {target.Name} workflow run history data due to weak network configuration</ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary may gain unauthorized access to {target.Name} workflow run history data due to weak network configuration</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary may gain unauthorized access to {target.Name} workflow run history data due to weak network configuration</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Limit Azure Logic Apps data plane access to workflow run history data by only allowing requests from specific IP address ranges. Grant access only as necessary, adhering to the principle of least privilege. Refer : &lt;a href=&quot;https://aka.ms/tmt-th188 &quot;&gt;https://aka.ms/tmt-th188 &lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Design</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ALA' and not target.b1724997-7ae6-4b30-a001-9c5b42d9d1d1 is 'No'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH189</Id>
+      <ShortTitle>An adversary may gain unauthorized access to {target.Name} triggers/actions inputs or outputs by workflow run history data</ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary may gain unauthorized access to {target.Name} triggers/actions inputs or outputs by workflow run history data</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary may gain unauthorized access to {target.Name} triggers/actions inputs or outputs by workflow run history data</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Enable secure inputs or outputs on the trigger or action to prevent sensitive data from being logged into run history. Refer : &lt;a href=&quot;https://aka.ms/tmt-th189 &quot;&gt;https://aka.ms/tmt-th189 &lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Design</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ALA' and not target.5afb52dc-dffb-4319-aa22-523f78ee3845 is 'No'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH190</Id>
+      <ShortTitle>An adversary may gain unauthorized access to {target.Name} trigger due to weak controls on the trigger</ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary may gain unauthorized access to {target.Name} trigger due to weak controls on the trigger</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary may gain unauthorized access to {target.Name} trigger due to weak controls on the trigger</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Limit access to invoke the trigger by Logic Apps Shared Access Signatures ( SAS) keys and callback URLs. Refer : &lt;a href=&quot;https://aka.ms/tmt-th190 &quot;&gt;https://aka.ms/tmt-th190&lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Design</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include> target is 'SE.P.TMCore.ALA' and ( target.d488c23c-1667-45a1-994b-f56f2655727b is 'Allow any IP inbound' or target.d488c23c-1667-45a1-994b-f56f2655727b is 'Select')</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH191</Id>
+      <ShortTitle>An adversary may gain unauthorized access to trigger {target.Name} workflows due to weak network configuration </ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary may gain unauthorized access to trigger {target.Name} workflows due to weak network configuration </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary may gain unauthorized access to trigger {target.Name} workflows due to weak network configuration </Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Restrict calls to Azure Logic Apps on a network level, only permitting specific clients (belonging to a set of IP addresses or IP address range) to trigger workflows. Refer : &lt;a href=&quot;https://aka.ms/tmt-th191 &quot;&gt;https://aka.ms/tmt-th191&lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Design</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ALA'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH192</Id>
+      <ShortTitle>An adversary may read sensitive workflow parameters due to improper handling and management of workflow parameters and inputs </ShortTitle>
+      <Category>I</Category>
+      <Description>An adversary may read sensitive workflow parameters due to improper handling and management of workflow parameters and inputs </Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary may read sensitive workflow parameters due to improper handling and management of workflow parameters and inputs </Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Define resource parameters and leverage Azure Logic Apps workflow definition language, such as the @parameters() operation, to access resource parameter values at runtime. Use the securestring parameter type to better protect when and how parameter values can be accessed. For sensitive parameters (e.g. secrets), use Azure Key Vault to store and retrieve secrets when needed. Refer : &lt;a href=&quot;https://aka.ms/tmt-th192 &quot;&gt;https://aka.ms/tmt-th192&lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ALA'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH193</Id>
+      <ShortTitle>An adversary can abuse poorly managed credentials or secrets used to access other resources in AAD tenants.</ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary can abuse poorly managed credentials or secrets used to access other resources in AAD tenants</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary can abuse poorly managed credentials or secrets used to access other resources in AAD tenants</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Use managed identities , if possible , for your logic apps to connect to different resources managed in AAD tenant.  Refer : &lt;a href=&quot;https://aka.ms/tmt-th193 &quot;&gt;https://aka.ms/tmt-th193&lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>1</AttributeType>
