@@ -930,6 +930,18 @@
       <Attributes />
     </ElementType>
     <ElementType>
+      <Name>Azure Data Explorer</Name>
+      <ID>SE.P.TMCore.ADE</ID>
+      <Description>A representation of Azure Data Explorer</Description>
+      <ParentElement>GE.P</ParentElement>
+      <Image>iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQ3SURBVGhD3djNa9RAGAbwnvyD9ODRox78BwQVD3oQRD14qAp6EFSoINiDXgQFQURBlFJsVbSVHsQiiq390NrP3e2XLda223a7HfsMeddJ8iaZmUyy2z7w0CWZyeZHdzPZNJ14WhBNzX117Z7L/eLQk0FxpG0os57q/CkuvZsSTWI79UTnhv0w/h+M1AOdKzYIRvJE547lwEge6Lpgo8BIlmhT7OnXI+L+t2lx9u0vdj9XFhsHRrJAm2KBnF3dkOezslEVzd1j7Di1kVg0Doy4RKfBUpLQsVg0CYy4QNt8Z8f+rHln4M/iWkUcbx8OjU/EojpgJA3aBgvQRnXLe3d/sB3fa3W8FhbVBSM2aBss9e6XkvfO/jwemPON08aiJmDEBJ0GSw2inw3P+/YbYVFTMKKDdoGl3vlcFP3zK3JpUrcbY1EbMBKHdomNqhUWtQUjHNoUi6UHV2MsPzprLBrEtn4uyfnF5XX5Wt0XahowoqJtsOo6q3NjwWHLlap3BCFfx6LTghGg02Ipcegg9nZv0YelYBv2qWNrdQFGjj0fZU8yqrjaRqVr8k9oPPed7SkseTPC+Vj6Gxov6wqMHH2hf3N/8+OUNysc3avxg74Zb0Y42MfNcQpGTNDcjYXpOst9UrCNGyvrGozYom1vKlR0LBbNAoyYoHFfjIuYuk0XS235VJDl9vmaFRgxQasNYgHpGF3UAyU1SzBiig5i1XU2cY3VqS14avGlGCy1iOrWurclOrroOCwlDbq5a1xce180B/+YuSde9e2V/TR6xgma+84ulCvebH+W1jfFlZ6J0Pi4Anvw4Yi41T1nBlaxrtAcFqDgf5dSqW6JG9vreHBOVAm7r9UQzGGpQOskiOawVG6NRRKXHqUq1ggch0W7hg57I5ND6DgsNYhOg9UG62BXNwreaL2cbBtjT5Lro++zYmihLP9y+7lyWC1wFljK+U7+ZNM2CpsIzhJLcY2Ow6KRYBfYymb0zzc1rtBJWJQFu8DSMb4Vrnpb4pMWrYNFQ2CXWGrWaF0s6gNngaVmhTbBojVwllgq7r91oos2xaISnAcWx1irRD/HCiYJbYNFJZg7QaorbNIxuEShbbGoBL8ZOGB9ollhKUF0GiwqwUvlQRFENwKWQui0WLR20VLReWGHZ+7I6uRc50RqLFoDI0DjKUYeWCxTNF53ybrQPs0iTOoD68Q1lpoX2gicFZaq+/FOg9YGZ41Fv05e9EYmxxatBc4Dq/tcTI0NOhHcqFiKKToW3OhYigk6ErxTsBRdNAveaViKDjoE3qlYShLaB97pWEocugbeLVhKFFqCdxuWwqElmDtBqg4Wj264udR6YClBtASneQCA4FdWR99+9hj1xFJUtATbPgBQM/e3J4RuBCyF0LWLlukDAC4qupGwFKBrYATo/uJ1Kyzl93Kv/JnXaFjK11JZ/APE8zEB5VpUdAAAAABJRU5ErkJggg==</Image>
+      <Hidden>false</Hidden>
+      <Representation>Ellipse</Representation>
+      <StrokeThickness>0</StrokeThickness>
+      <ImageLocation>Centered on stencil</ImageLocation>
+      <Attributes></Attributes>
+    </ElementType>
+    <ElementType>
       <Name>Azure Data Factory</Name>
       <ID>SE.P.TMCore.AzureDataFactory</ID>
       <Description>Azure Data Factory</Description>
@@ -983,7 +995,7 @@
           <Id>33333333-3333-3333-3333-333333333333</Id>
           <IsInherited>false</IsInherited>
           <Name>d488c23c-1667-45a1-994b-f56f2655727b</Name>
-          <DisplayName>Nw Level Access Control Config for Triggers</DisplayName>
+          <DisplayName>Nw Level Access Control Config for Triggers</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -998,7 +1010,7 @@
           <Id>33333333-3333-3333-3333-333333333333</Id>
           <IsInherited>false</IsInherited>
           <Name>0b0ab9bc-a582-4509-a6c4-8d56de65661e</Name>
-          <DisplayName>Nw Level Access Control Config for Contents</DisplayName>
+          <DisplayName>Nw Level Access Control Config for Contents</DisplayName>
           <Mode>Dynamic</Mode>
           <Type>List</Type>
           <Inheritance>Virtual</Inheritance>
@@ -11427,6 +11439,214 @@
           <HideFromUI>false</HideFromUI>
           <Values>
             <Value>Use managed identities , if possible , for your logic apps to connect to different resources managed in AAD tenant.  Refer : &lt;a href=&quot;https://aka.ms/tmt-th193 &quot;&gt;https://aka.ms/tmt-th193&lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ADE'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH194</Id>
+      <ShortTitle>An adversary may gain unauthorized access to run any action on {target.Name} due to weak authorization rules</ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary may gain unauthorized access to run any action on {target.Name} due to weak authorization rules</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary may gain unauthorized access to run any action on {target.Name} due to weak authorization rules</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Ensure access to run any action on a Kusto resource is restricted by assigning the appropriate Role-Based Access Control (RBAC) roles to only those needing the privileges. Follow the principle of least privilege. Security roles define which security principals (users and applications) can have permissions to operate on a secured resource (such as a database or a table), and what operations are permitted. Refer : 1) &lt;a href=&quot;https://aka.ms/tmt-th194 &quot;&gt;https://aka.ms/tmt-th194 &lt;/a&gt; 2)&lt;a href=&quot;https://aka.ms/tmt-th194a &quot;&gt;https://aka.ms/tmt-th194a &lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ADE'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH195</Id>
+      <ShortTitle>Secret information should not be logged in {target.Name}</ShortTitle>
+      <Category>I</Category>
+      <Description>Secret information should not be logged in {target.Name}</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Secret information should not be logged in {target.Name}</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Ensure any secret information like passwords , SAS Tokens , refresh tokens etc are not logged in Azure Data Explorer.</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>High</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ADE'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH196</Id>
+      <ShortTitle>Sensitive information might get disclosed while querying {target.Name}</ShortTitle>
+      <Category>I</Category>
+      <Description>Sensitive information might get disclosed while querying {target.Name}</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Sensitive information might get disclosed while querying {target.Name}</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>RestrictedViewAccess policy can be enabled on tables in database which contain sensitive information and only principals with "UnrestrictedViewer" role in the database can query that data.Refer : &lt;a href=&quot;https://aka.ms/tmt-th196 &quot;&gt;https://aka.ms/tmt-th196 &lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ADE'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH197</Id>
+      <ShortTitle>An adversary can run malicious Kusto queries on {target.Name} if user provided input is used in non-parameterised queries</ShortTitle>
+      <Category>E</Category>
+      <Description>An adversary can run malicious Kusto queries on {target.Name} if user provided input is used in non-parameterised queries</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary can run malicious Kusto queries on {target.Name} if user provided input is used in non-parameterised queries</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Please use query parameters to protect against injection attacks.Refer : &lt;a href=&quot;https://aka.ms/tmt-th197 &quot;&gt;https://aka.ms/tmt-th197 &lt;/a&gt;</Value>
           </Values>
           <Id>22222222-2222-2222-2222-222222222222</Id>
           <AttributeType>2</AttributeType>
