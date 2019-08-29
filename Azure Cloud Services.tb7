@@ -11673,5 +11673,57 @@
         </ThreatMetaDatum>
       </PropertiesMetaData>
     </ThreatType>
+    <ThreatType>
+      <GenerationFilters>
+        <Include>target is 'SE.P.TMCore.ADE'</Include>
+        <Exclude />
+      </GenerationFilters>
+      <Id>TH198</Id>
+      <ShortTitle>An adversary can gain access to unencrypted sensitive data stored in {target.Name} cluster</ShortTitle>
+      <Category>I</Category>
+      <Description>An adversary can gain access to unencrypted sensitive data stored in {target.Name} cluster</Description>
+      <PropertiesMetaData>
+        <ThreatMetaDatum>
+          <Name>UserThreatDescription</Name>
+          <Label>Description</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>An adversary can gain access to unencrypted sensitive data stored in {target.Name} cluster</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>0</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>PossibleMitigations</Name>
+          <Label>Possible Mitigation(s)</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Enabling encryption at rest on your cluster provides data protection for stored data (at rest). Refer : &lt;a href=&quot;https://aka.ms/tmt-th198 &quot;&gt;https://aka.ms/tmt-th198 &lt;/a&gt;</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>2</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>Priority</Name>
+          <Label>Severity</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Medium</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+        <ThreatMetaDatum>
+          <Name>SDLPhase</Name>
+          <Label>SDL Phase</Label>
+          <HideFromUI>false</HideFromUI>
+          <Values>
+            <Value>Implementation</Value>
+          </Values>
+          <Id>22222222-2222-2222-2222-222222222222</Id>
+          <AttributeType>1</AttributeType>
+        </ThreatMetaDatum>
+      </PropertiesMetaData>
+    </ThreatType>
   </ThreatTypes>
 </KnowledgeBase>
